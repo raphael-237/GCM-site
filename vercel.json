@@ -1,0 +1,27 @@
+{
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "devCommand": null,
+  "installCommand": null,
+  "framework": null,
+  "routes": [
+    {
+      "src": "/images/(.*)",
+      "dest": "/images/$1",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/(.*)\\.(css|js|json)",
+      "dest": "/$1.$2",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}

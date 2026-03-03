@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="Logo.jpg">
+    <title>Actualités - GEC Informatique Sarl</title>
+
+    <!-- Bootstrap & Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Notre feuille de style principale -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Styles supplémentaires pour la page actualités */
+        .page-header {
+            background: linear-gradient(135deg, var(--blue-dark), var(--blue-main));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .breadcrumb-custom {
+            background: transparent;
+            padding: 0;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .breadcrumb-custom a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+        }
+        
+        .breadcrumb-custom a:hover {
+            color: white;
+        }
+        
+        .breadcrumb-custom .active {
+            color: white;
+            font-weight: 600;
+        }
+        
+        .facebook-feed-page {
+            padding: 0 0 80px 0;
+            background: linear-gradient(135deg, #f8fcff 0%, #ffffff 100%);
+        }
+        
+        .facebook-feed-container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px -10px rgba(11,61,145,0.15);
+            border: 1px solid rgba(15,82,186,0.1);
+            min-height: 700px;
+            margin-bottom: 30px;
+        }
+        
+        .facebook-feed-container .elfsight-app-ba7be28b-5f8d-4943-ac66-b4ee3492090a {
+            width: 100%;
+            height: 100%;
+            min-height: 700px;
+        }
+        
+        .back-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--blue-gradient);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .back-home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(11,61,145,0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 767px) {
+            .page-header {
+                padding: 40px 0;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .facebook-feed-container {
+                padding: 20px;
+                min-height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address">CHAPELLE NGOUSSO - Yaoundé</span>
+            <i class="fas fa-envelope ml-3"></i> <span data-i18n="contact-email">contacts@gec-informatique.com</span>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="social mr-3">
+                <a href="https://www.facebook.com/gecinformatique/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/237693538376" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/company/gec-informatique/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="language-selector">
+    <span class="lang-flag" id="lang-toggle" onclick="toggleLanguage()">
+        <img id="lang-flag-img" src="https://flagcdn.com/w40/gb.png" alt="Switch to English" title="Switch to English">
+    </span>
+</div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= HEADER INFO ================= -->
+<div class="main-header" id="mainHeader">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="brand-area">
+                    <img src="images/Logo.jpg" width="100" alt="Logo GEC Informatique">
+                    <div class="brand-text">
+                        <h3>GEC INFORMATIQUE SARL</h3>
+                        <small data-i18n="header-slogan">La numérisation au service de la Gestion</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 whatsapp-box">
+                <h6 data-i18n="whatsapp-title">Contactez-nous via WhatsApp</h6>
+                <p><i class="fab fa-whatsapp"></i> +237 694 98 98 64</p>
+                <p><i class="fab fa-whatsapp"></i> +237 693 53 83 76</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar sticky-navbar" id="mainNav">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#accueil" data-i18n="nav-home">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#apropos" data-i18n="nav-about">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#services" data-i18n="nav-services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#produits" data-i18n="nav-products">Nos Produits</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#formations" data-i18n="nav-training">Formations</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#temoignages" data-i18n="nav-testimonials">Témoignages</a></li>
+                <li class="nav-item active"><a class="nav-link" href="actualites.html" data-i18n="nav-news">Actualités</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= PAGE HEADER ================= -->
+<div class="page-header">
+    <div class="container">
+        <h1 data-i18n="news-page-title">Nos actualités Facebook</h1>
+        <p data-i18n="news-page-description">Retrouvez toutes nos dernières publications, événements et actualités directement depuis notre page Facebook</p>
+    </div>
+</div>
+
+<!-- ================= FACEBOOK FEED PAGE ================= -->
+<section class="facebook-feed-page">
+    <div class="container">
+        <div class="facebook-feed-container">
+           <!-- Elfsight Social Feed | Untitled Social Feed -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-77074dda-67e9-4a17-a6c7-868a0d0b7d6d" data-elfsight-app-lazy></div></div>
+    </div>
+</section>
+
+<!-- ================= PRE FOOTER ================= -->
+<div class="pre-footer" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5 data-i18n="quick-links">Liens rapides</h5>
+                <ul>
+                    <li><a href="index.html#accueil" data-i18n="nav-home">Accueil</a></li>
+                    <li><a href="index.html#apropos" data-i18n="nav-about">À propos</a></li>
+                    <li><a href="index.html#services" data-i18n="nav-services">Services</a></li>
+                    <li><a href="index.html#produits" data-i18n="nav-products">Nos Produits</a></li>
+                    <li><a href="index.html#formations" data-i18n="nav-training">Formations</a></li>
+                    <li><a href="index.html#temoignages" data-i18n="nav-testimonials">Témoignages</a></li>
+                    <li><a href="actualites.html" data-i18n="nav-news">Actualités</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="about">À propos</h5>
+                <p data-i18n="footer-about">GEC Informatique est une entreprise spécialisée dans les services technologiques et la formation.</p>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="contact">Contact</h5>
+                <p><i class="fas fa-envelope"></i> contacts@gec-informatique.com</p>
+                <p><i class="fas fa-phone"></i> +237 693 53 83 76</p>
+                <p><i class="fab fa-whatsapp"></i> +237 694 98 98 64</p>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address">Chapelle Ngousso, Yaoundé</span></p>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="follow-us">Suivez-nous</h5>
+                <div style="display:flex;gap:12px;">
+                    <a href="https://www.facebook.com/gecinformatique/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/237693538376" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/company/gec-informatique/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-divider"></div>
+<div class="footer">
+    &copy; 2026 GEC Informatique Sarl - <span data-i18n="rights">Tous droits réservés.</span>
+</div>
+
+<!-- Scripts externes -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Script de traduction -->
+<script src="translations.js"></script>
+<!-- Notre fichier de scripts principal -->
+<script src="scripts.js"></script>
+</body>
+</html>
