@@ -7,6 +7,7 @@ body {
     overflow-x: hidden;
 }
 
+/* À PLACER TOUT EN HAUT DE style.css */
 :root {
     --blue-dark: #0b3d91;
     --blue-main: #0f52ba;
@@ -18,6 +19,12 @@ body {
     --shadow-md: 0 20px 40px -20px rgba(11,61,145,0.3);
     --shadow-lg: 0 30px 60px -20px rgba(11,61,145,0.4);
     --shadow-hover: 0 40px 80px -20px rgba(11,61,145,0.5);
+}
+
+/* Définir le dégradé SVG globalement */
+svg defs linearGradient#grad {
+    --grad-start: #5da8ff;
+    --grad-end: #00e0ff;
 }
 
 /* ===================== TOP BAR ===================== */

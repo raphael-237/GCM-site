@@ -633,15 +633,16 @@
     </defs>
 </svg>
 
-<<!-- Scripts externes -->
+<!-- Scripts externes - ORDRE CORRIGÉ -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Script de traduction (chargé en premier) -->
-<script src="translations.js"></script>
-<!-- Notre fichier de scripts principal -->
-<script src="scripts.js"></script>
-<!-- Script Elfsight (chargé en dernier) -->
+
+<!-- Script Elfsight AVANT les scripts personnalisés -->
 <script src="https://elfsightcdn.com/platform.js" async></script>
+
+<!-- Scripts personnalisés APRÈS -->
+<script src="translations.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
