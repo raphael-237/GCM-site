@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="Logo.jpg">
     <title>GEC Informatique Sarl</title>
-
-    <!-- Bootstrap & Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- Notre feuille de style principale -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -68,17 +64,14 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item active"><a class="nav-link" href="#accueil" data-i18n="nav-home">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="#apropos" data-i18n="nav-about">À propos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services" data-i18n="nav-services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#produits" data-i18n="nav-products">Nos Produits</a></li>
-                <li class="nav-item"><a class="nav-link" href="#formations" data-i18n="nav-training">Formations</a></li>
-                <li class="nav-item"><a class="nav-link" href="#temoignages" data-i18n="nav-testimonials">Témoignages</a></li>
+                <li class="nav-item"><a class="nav-link" href="apropos.html" data-i18n="nav-about">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav-services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="produits.html" data-i18n="nav-products">Nos Produits</a></li>
                 <li class="nav-item"><a class="nav-link" href="actualites.html" data-i18n="nav-news">Actualités</a></li>
             </ul>
         </div>
     </div>
 </nav>
-
 <!-- ================= HERO AVEC COMMANDES MANUELLES ================= -->
 <div id="accueil" class="carousel slide hero" data-ride="carousel" data-interval="4000" data-pause="false">
     <!-- Indicateurs -->
@@ -125,270 +118,6 @@
         <button class="btn btn-blue" onclick="document.getElementById('avisModalOverlay').classList.add('open')" data-i18n="hero-button">Votre avis compte</button>
     </div>
 </div>
-
-<!-- ================= A PROPOS (VERSION CORRIGÉE AVEC INFORMATIONS PRÉCISES) ================= -->
-<section class="about-section" id="apropos">
-    <div class="container">
-        <!-- Bandeau supérieur -->
-        <div class="about-header text-center">
-            <span class="about-subtitle" data-i18n="about-subtitle">QUI SOMMES-NOUS</span>
-            <h2 class="about-title" data-i18n="about-title">GEC Informatique Sarl, <span>l'innovation au service de la santé et du numérique</span> au Cameroun</h2>
-            <div class="title-separator">
-                <span class="separator-line"></span>
-                <i class="fas fa-microchip separator-icon"></i>
-                <span class="separator-line"></span>
-            </div>
-        </div>
-
-        <!-- Contenu principal avec informations précises -->
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="about-content">
-                    <p class="about-lead" data-i18n="about-lead">Fondée en 2016 à Yaoundé par <strong>NOUFACK Delmas</strong>, GEC Informatique Sarl est une entreprise innovante spécialisée dans les solutions technologiques pour le secteur médical et les services numériques au Cameroun.</p>
-                    
-                    <p data-i18n="about-text1">Notre expertise principale repose sur le développement de <strong>logiciels de gestion pour les établissements de santé</strong>, notamment notre solution phare <strong>GCM (Gestion des Centres Médicaux)</strong> qui équipe aujourd'hui plusieurs hôpitaux et cliniques à travers le pays. Nous avons également développé <strong>ALL-WORKER</strong>, une plateforme innovante de mise en relation entre talents et employeurs.</p>
-
-                    <p data-i18n="about-text2">Au-delà du développement logiciel, nous proposons des <strong>services de location de lits médicalisés</strong> (lits d'hospitalisation et lits de garde-malade), des <strong>installations de vidéosurveillance</strong>, ainsi que des <strong>formations certifiantes en TIC</strong> pour former la prochaine génération de professionnels du numérique.</p>
-
-                    <!-- Liste des valeurs et spécialités -->
-                    <div class="values-list">
-                        <div class="value-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-i18n="value-gcm"><strong>Logiciel GCM</strong> - Solution complète de gestion pour centres médicaux (patients, pharmacie, laboratoire, facturation)</span>
-                        </div>
-                        <div class="value-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-i18n="value-allworker"><strong>Plateforme ALL-WORKER</strong> - Mise en relation talents-entreprises (www.all-worker.com)</span>
-                        </div>
-                        <div class="value-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-i18n="value-beds"><strong>Location de lits médicalisés</strong> - Hospitalisation et garde-malade avec maintenance incluse</span>
-                        </div>
-                        <div class="value-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-i18n="value-surveillance"><strong>Installation vidéosurveillance</strong> - Systèmes de sécurité pour particuliers et professionnels</span>
-                        </div>
-                        <div class="value-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-i18n="value-training"><strong>Formations TIC certifiantes</strong> - Développement web, réseaux, cybersécurité, bureautique</span>
-                        </div>
-                        <div class="value-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-i18n="value-dev"><strong>Développement sur mesure</strong> - Sites web, applications mobiles, logiciels d'entreprise</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="about-image-grid">
-                    <div class="grid-main-image">
-                        <img src="images/Logo.jpg" alt="Logo GEC Informatique - La numérisation au service de la Gestion">
-                        <div class="image-badge">
-                            <i class="fas fa-calendar-check"></i>
-                            <span data-i18n="since">Depuis 2016</span>
-                        </div>
-                    </div>
-                    <div class="grid-side-images">
-                        <img src="images/LOGO.png" alt="Équipe GEC Informatique en formation">
-                        <img src="images/all.jpeg" alt="Installation de vidéosurveillance GEC">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Section de mission avec informations précises -->
-        <div class="mission-statement">
-            <div class="mission-quote">
-                <i class="fas fa-quote-left"></i>
-                <p data-i18n="mission-text">Notre mission est de <strong>digitaliser le secteur de la santé au Cameroun</strong> et de <strong>rendre la technologie accessible</strong> à tous. À travers nos solutions logicielles, nos équipements médicalisés et nos formations, nous contribuons activement à l'émergence d'un écosystème numérique performant et inclusif.</p>
-                <div class="quote-author" data-i18n="mission-author">— NOUFACK Delmas, Fondateur & Directeur de GEC Informatique Sarl</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= NOUVELLE SECTION SERVICES OFFERTS ================= -->
-<section class="services-section" id="services">
-    <div class="container">
-        <!-- En-tête de section -->
-        <div class="services-header text-center">
-            <span class="services-subtitle" data-i18n="services-subtitle">NOTRE SAVOIR-FAIRE</span>
-            <h2 class="services-title" data-i18n="services-title">Des services <span>sur mesure</span> pour votre réussite</h2>
-            <div class="title-separator">
-                <span class="separator-line"></span>
-                <i class="fas fa-cogs separator-icon"></i>
-                <span class="separator-line"></span>
-            </div>
-            <p class="services-description" data-i18n="services-description">De l'infrastructure technique à l'accompagnement humain, nous offrons une gamme complète de services pour couvrir tous vos besoins numériques et matériels.</p>
-        </div>
-
-        <!-- Grille des services -->
-        <div class="services-grid">
-
-            <!-- Service 1 - Location lits garde malade -->
-            <div class="service-card" data-aos="fade-up">
-                <div class="service-image">
-                    <img src="images/WhatsApp Image 2026-03-03 at 11.33.47.jpeg" alt="Lit de garde malade" onerror="this.src='https://via.placeholder.com/600x400/0f52ba/ffffff?text=Lit+Garde+Malade'">
-                    <div class="service-icon">
-                        <i class="fas fa-bed"></i>
-                    </div>
-                </div>
-                <div class="service-content">
-                    <h3 data-i18n="service-carebed-title">Location de lits de garde malade</h3>
-                    <p class="service-desc" data-i18n="service-carebed-desc">Des lits confortables et fonctionnels pour les accompagnants et les gardes malades dans les services sanitaires. Solution idéale pour le confort des aidants.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-carebed1">Lits ergonomiques réglables</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-carebed2">Moustiquaire intégré</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-carebed3">Matelas anti-escarres</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-carebed4">Livraison et installation</span></li>
-                    </ul>
-                    <a href="#" class="service-link" onclick="event.preventDefault(); document.getElementById('rdvModalOverlay').classList.add('open');" data-i18n="btn-quote">
-                        Demander un devis <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service 2 - Location lits d'hospitalisation -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-image">
-                    <img src="images/lit.jpg" alt="Lit d'hospitalisation" onerror="this.src='https://via.placeholder.com/600x400/0b3d91/ffffff?text=Lit+Hospitalisation'">
-                    <div class="service-icon">
-                        <i class="fas fa-hospital-alt"></i>
-                    </div>
-                </div>
-                <div class="service-content">
-                    <h3 data-i18n="service-hospbed-title">Location de lits d'hospitalisation</h3>
-                    <p class="service-desc" data-i18n="service-hospbed-desc">Lits médicalisés de haute qualité pour établissements de santé et particuliers. Conformes aux normes sanitaires en vigueur pour un confort et une sécurité optimale.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-hospbed1">Lits électriques à hauteur variable</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-hospbed2">Barrières de sécurité amovibles</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-hospbed3">Location courte ou longue durée</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-hospbed4">Assistance technique 24/7</span></li>
-                    </ul>
-                    <a href="#" class="service-link" onclick="event.preventDefault(); document.getElementById('rdvModalOverlay').classList.add('open');" data-i18n="btn-quote">
-                        Demander un devis <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service 3 - Installation vidéo surveillance -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-image">
-                    <img src="images/cam.jpg" alt="Vidéo surveillance" onerror="this.src='https://via.placeholder.com/600x400/1e73d8/ffffff?text=Vidéo+Surveillance'">
-                    <div class="service-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                </div>
-                <div class="service-content">
-                    <h3 data-i18n="service-surveillance-title">Installation vidéo surveillance</h3>
-                    <p class="service-desc" data-i18n="service-surveillance-desc">Protégez vos biens et vos proches avec nos systèmes de vidéosurveillance dernière génération. Installation professionnelle pour entreprises et particuliers.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-surv1">Caméras HD jour/nuit</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-surv2">Accès à distance via mobile</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-surv3">Détection de mouvement</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-surv4">Enregistrement cloud ou local</span></li>
-                    </ul>
-                    <a href="#" class="service-link" onclick="event.preventDefault(); document.getElementById('rdvModalOverlay').classList.add('open');" data-i18n="btn-quote">
-                        Demander un devis <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service 4 - Développement logiciel -->
-            <div class="service-card" data-aos="fade-up">
-                <div class="service-image">
-                    <img src="images/b (3).jpg" alt="Développement logiciel" onerror="this.src='https://via.placeholder.com/600x400/0f52ba/ffffff?text=Développement+Logiciel'">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                </div>
-                <div class="service-content">
-                    <h3 data-i18n="service-dev-title">Développement logiciel sur mesure</h3>
-                    <p class="service-desc" data-i18n="service-dev-desc">Des applications web, mobile et logiciels de gestion conçus spécialement pour répondre à vos besoins métiers et optimiser vos processus.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-dev1">Applications web & mobile</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-dev2">Logiciels de gestion d'entreprise</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-dev3">API et intégrations</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-dev4">Maintenance évolutive</span></li>
-                    </ul>
-                    <a href="#" class="service-link" onclick="event.preventDefault(); document.getElementById('rdvModalOverlay').classList.add('open');" data-i18n="btn-quote">
-                        Demander un devis <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service 5 - Formation TIC -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-image">
-                    <img src="images/forma.jpg" alt="Formation TIC" onerror="this.src='https://via.placeholder.com/600x400/0b3d91/ffffff?text=Formation+TIC'">
-                    <div class="service-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                </div>
-                <div class="service-content">
-                    <h3 data-i18n="service-training-title">Formation TIC professionnelle</h3>
-                    <p class="service-desc" data-i18n="service-training-desc">Des programmes certifiants pour développer vos compétences numériques. Formation pour professionnels, étudiants et particuliers.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-training1">Développement web & mobile</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-training2">Réseaux & cybersécurité</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-training3">Bureautique & Office 365</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-training4">Certificats reconnus</span></li>
-                    </ul>
-                    <a href="#formations" class="service-link" data-i18n="btn-view-training">Voir les formations <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Service 6 - Maintenance & Support -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-image">
-                    <img src="images/m.jpg" alt="Maintenance informatique" onerror="this.src='https://via.placeholder.com/600x400/1e73d8/ffffff?text=Maintenance+Support'">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                </div>
-                <div class="service-content">
-                    <h3 data-i18n="service-maintenance-title">Maintenance & Support informatique</h3>
-                    <p class="service-desc" data-i18n="service-maintenance-desc">Assistance technique réactive et contrats de maintenance sur mesure pour garantir la continuité de vos activités et la performance de vos systèmes.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-maintenance1">Support à distance et sur site</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-maintenance2">Maintenance préventive</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-maintenance3">Dépannage urgent</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-maintenance4">Contrats personnalisés</span></li>
-                    </ul>
-                    <a href="#" class="service-link" onclick="event.preventDefault(); document.getElementById('rdvModalOverlay').classList.add('open');" data-i18n="btn-quote">
-                        Demander un devis <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service 7 - Sites & Plateformes web -->
-            <div class="service-card" data-aos="fade-up">
-                <div class="service-image">
-                    <img src="images/web-dev.jpg" alt="Sites web" onerror="this.src='https://via.placeholder.com/600x400/0f52ba/ffffff?text=Sites+Web'">
-                    <div class="service-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                </div>
-                <div class="service-content">
-                    <h3 data-i18n="service-web-title">Sites & Plateformes web</h3>
-                    <p class="service-desc" data-i18n="service-web-desc">Création de sites vitrine, e-commerce et plateformes métier. Des interfaces modernes, responsives et optimisées pour le référencement.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-web1">Design sur mesure</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-web2">E-commerce & paiement en ligne</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-web3">Référencement SEO</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="feature-web4">Administration simplifiée</span></li>
-                    </ul>
-                    <a href="#" class="service-link" onclick="event.preventDefault(); document.getElementById('rdvModalOverlay').classList.add('open');" data-i18n="btn-quote">
-                        Demander un devis <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= PARTNERS ================= -->
 <section class="partners-section" id="partenaires">
     <div class="container">
         <h3 class="partners-title" data-i18n="partners-title">Ils nous font confiance</h3>
@@ -406,6 +135,9 @@
                 <div class="partner-item"><img src="images/obala.jpeg" alt="Partenaire 9"></div>
                 <div class="partner-item"><img src="images/garni.jpeg" alt="Partenaire 10"></div>
                 <div class="partner-item"><img src="images/elig.jpeg" alt="Partenaire 11"></div>
+                <div class="partner-item"><img src="images/clinic.jpeg" alt="Partenaire 12"></div>
+                <div class="partner-item"><img src="images/clin.jpeg" alt="Partenaire 13"></div>
+                <div class="partner-item"><img src="images/prive.jpeg" alt="Partenaire 14"></div>
                 <!-- DUPLICATION pour boucle infinie fluide -->
                 <div class="partner-item"><img src="images/OIP.webp" alt="Partenaire 1"></div>
                 <div class="partner-item"><img src="images/logo hgy.png" alt="Partenaire 2"></div>
@@ -418,284 +150,13 @@
                 <div class="partner-item"><img src="images/obala.jpeg" alt="Partenaire 9"></div>
                 <div class="partner-item"><img src="images/garni.jpeg" alt="Partenaire 10"></div>
                 <div class="partner-item"><img src="images/elig.jpeg" alt="Partenaire 11"></div>
+                 <div class="partner-item"><img src="images/clinic.jpeg" alt="Partenaire 12"></div>
+                <div class="partner-item"><img src="images/clin.jpeg" alt="Partenaire 13"></div>
+                <div class="partner-item"><img src="images/prive.jpeg" alt="Partenaire 14"></div>
             </div>
         </div>
     </div>
 </section>
-
-<!-- ================= PRODUITS SUR LE MARCHÉ (VERSION CORRIGÉE) ================= -->
-<section class="products-section" id="produits">
-    <div class="container">
-        <!-- En-tête de section -->
-        <div class="products-header text-center">
-            <span class="products-badge" data-i18n="products-badge">INNOVATION & EXCELLENCE</span>
-            <h2 class="products-title" data-i18n="products-title">Nos produits sur le <span>marché</span></h2>
-            <p class="products-description" data-i18n="products-description">Explorez nos solutions techniques pensées pour vous. Parmi notre gamme, deux produits se distinguent particulièrement par leur popularité et leur efficacité auprès de nos clients.</p>
-        </div>
-
-        <!-- Grille des produits -->
-        <div class="products-grid">
-            <!-- PRODUIT 1 - GCM -->
-            <div class="product-card">
-                <div class="product-badge-wrapper">
-                    <span class="product-badge" data-i18n="product-gcm-badge">Logiciel</span>
-                </div>
-                
-                <div class="product-images">
-                    <div class="main-image-container">
-                        <img class="img-main" id="main-img-1" src="images/LOGO.png" alt="GCM Logiciel">
-                    </div>
-                    <div class="product-thumbs-container">
-                        <div class="product-thumbs">
-                            <div class="thumb-item active" onclick="changeMain('main-img-1', this)">
-                                <img src="images/gg.jfif" alt="GCM 1">
-                            </div>
-                            <div class="thumb-item" onclick="changeMain('main-img-1', this)">
-                                <img src="images/gcm.jfif" alt="GCM 2">
-                            </div>
-                            <div class="thumb-item" onclick="changeMain('main-img-1', this)">
-                                <img src="images/bord.png" alt="GCM 3">
-                            </div>
-                            <div class="thumb-item" onclick="changeMain('main-img-1', this)">
-                                <img src="images/facturation.png" alt="GCM 4">
-                            </div>
-                             <div class="thumb-item" onclick="changeMain('main-img-1', this)">
-                                <img src="images/creer patient.png" alt="GCM 4">
-                            </div>
-                             <div class="thumb-item" onclick="changeMain('main-img-1', this)">
-                                <img src="images/parametres.png" alt="GCM 4">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-info">
-                    <h3 data-i18n="product-gcm-title">Logiciel de Gestion des Centres Médicaux (GCM)</h3>
-                    <p class="product-description" data-i18n="product-gcm-desc">Solution complète de gestion des centres médicaux avec modules intégrés pour une administration optimale.</p>
-                    
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <i class="fas fa-user-md"></i>
-                            <span data-i18n="feature-patients">patients</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-pills"></i>
-                            <span data-i18n="feature-pharmacy">Pharmacie</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-flask"></i>
-                            <span data-i18n="feature-lab">Laboratoire</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-boxes"></i>
-                            <span data-i18n="feature-stock">Suivi de stock</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-file-invoice"></i>
-                            <span data-i18n="feature-invoicing">Facturation</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span data-i18n="feature-dashboard">Tableau de bord</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-users-cog"></i>
-                            <span data-i18n="feature-multiuser">Multi-utilisateurs</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-calendar-check"></i>
-                            <span data-i18n="feature-appointments">Rendez-vous</span>
-                        </div>
-                    </div>
-
-                    <div class="product-actions">
-                        <button class="btn-primary-custom" onclick="document.getElementById('rdvModalOverlay').classList.add('open')" data-i18n="btn-demo">
-                            Demander une démo <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PRODUIT 2 - ALL-WORKER -->
-            <div class="product-card">
-                <div class="product-badge-wrapper">
-                    <span class="product-badge" style="background: linear-gradient(135deg, #d4af37, #f5c542);" data-i18n="product-allworker-badge">Plateforme</span>
-                </div>
-                
-                <div class="product-images">
-                    <div class="main-image-container">
-                        <img class="img-main" id="main-img-2" src="images/all.jpeg" alt="ALL-WORKER">
-                    </div>
-                    <div class="product-thumbs-container">
-                        <div class="product-thumbs">
-                             <div class="thumb-item active" onclick="changeMain('main-img-2', this)">
-                                <img src="images/img fly2.jpeg" alt="AllWorker 1">
-                            </div>
-                            <div class="thumb-item active" onclick="changeMain('main-img-2', this)">
-                                <img src="images/al.jpg" alt="AllWorker 1">
-                            </div>
-                            <div class="thumb-item" onclick="changeMain('main-img-2', this)">
-                                <img src="images/aaa.jpg" alt="AllWorker 2">
-                            </div>
-                            <div class="thumb-item" onclick="changeMain('main-img-2', this)">
-                                <img src="images/aw.jpg" alt="AllWorker 3">
-                            </div>
-                            <div class="thumb-item" onclick="changeMain('main-img-2', this)">
-                                <img src="images/az.jpg" alt="AllWorker 4">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-info">
-                    <h3 data-i18n="product-allworker-title">ALL-WORKER</h3>
-                    <p class="product-description" data-i18n="product-allworker-desc">Une tâche, un métier - La plateforme innovante de mise en relation entre talents et opportunités professionnelles.</p>
-                    
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <i class="fas fa-user-tie"></i>
-                            <span data-i18n="feature-profiles">Profils détaillés</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-search"></i>
-                            <span data-i18n="feature-search">Recherche ciblée</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-star"></i>
-                            <span data-i18n="feature-satisfaction">100% satisfaction</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-briefcase"></i>
-                            <span data-i18n="feature-jobs">Offres d'emploi</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-robot"></i>
-                            <span data-i18n="feature-matching">Matching intelligent</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-headset"></i>
-                            <span data-i18n="feature-support">Support dédié</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-chart-pie"></i>
-                            <span data-i18n="feature-stats">Statistiques</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span data-i18n="feature-mobile">Application mobile</span>
-                        </div>
-                    </div>
-
-                    <div class="product-actions">
-                        <a href="https://all-worker.com" target="_blank" class="btn-primary-custom" style="text-decoration: none;" data-i18n="btn-discover">
-                            Découvrir la plateforme <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bannière CTA -->
-        <div class="products-cta">
-            <h3 data-i18n="cta-title">Prêt à transformer votre entreprise ?</h3>
-            <p data-i18n="cta-text">Contactez nos experts pour une démonstration personnalisée de nos solutions</p>
-            <div class="products-cta-buttons">
-                <button class="cta-btn-primary" onclick="document.getElementById('rdvModalOverlay').classList.add('open')" data-i18n="btn-contact">
-                    Nous contacter <i class="fas fa-phone-alt"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= NOS STATISTIQUES ================= -->
-<section class="stats-section">
-    <div class="stats-bg"></div>
-    <div class="container stats-container">
-        <div class="stats-header">
-            <span class="stats-label" data-i18n="stats-label">Notre bilan en chiffres</span>
-            <h2 data-i18n="stats-title">Des résultats qui parlent d'eux-mêmes</h2>
-            <p data-i18n="stats-text">Chaque chiffre reflète la confiance de nos clients et l'engagement de nos équipes.</p>
-        </div>
-        <div class="stats-grid">
-            <!-- Les 6 cartes de stats -->
-            <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-smile-beam"></i></div>
-                <div class="stat-circle">
-                    <svg viewBox="0 0 120 120">
-                        <circle class="track" cx="60" cy="60" r="50"/>
-                        <circle class="progress" cx="60" cy="60" r="50" data-percent="80" style="stroke-dasharray:0 314;"/>
-                    </svg>
-                    <div class="stat-value" data-target="80">0<span>%</span></div>
-                </div>
-                <div class="stat-label" data-i18n="stat-satisfaction">Satisfaction client</div>
-                <div class="stat-desc" data-i18n="stat-satisfaction-desc">Nos clients nous font confiance</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
-                <div class="stat-circle">
-                    <svg viewBox="0 0 120 120">
-                        <circle class="track" cx="60" cy="60" r="50"/>
-                        <circle class="progress" cx="60" cy="60" r="50" data-percent="75" style="stroke-dasharray:0 314;"/>
-                    </svg>
-                    <div class="stat-value" data-target="100">0<span>+</span></div>
-                </div>
-                <div class="stat-label" data-i18n="stat-projects">Projets réalisés</div>
-                <div class="stat-desc" data-i18n="stat-projects-desc">Des solutions déployées avec succès</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-users"></i></div>
-                <div class="stat-circle">
-                    <svg viewBox="0 0 120 120">
-                        <circle class="track" cx="60" cy="60" r="50"/>
-                        <circle class="progress" cx="60" cy="60" r="50" data-percent="65" style="stroke-dasharray:0 314;"/>
-                    </svg>
-                    <div class="stat-value" data-target="100">0<span>+</span></div>
-                </div>
-                <div class="stat-label" data-i18n="stat-clients">Clients accompagnés</div>
-                <div class="stat-desc" data-i18n="stat-clients-desc">Entreprises et particuliers</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
-                <div class="stat-circle">
-                    <svg viewBox="0 0 120 120">
-                        <circle class="track" cx="60" cy="60" r="50"/>
-                        <circle class="progress" cx="60" cy="60" r="50" data-percent="90" style="stroke-dasharray:0 314;"/>
-                    </svg>
-                    <div class="stat-value" data-target="10">0<span>+</span></div>
-                </div>
-                <div class="stat-label" data-i18n="stat-experience">Années d'expérience</div>
-                <div class="stat-desc" data-i18n="stat-experience-desc">Une décennie d'expertise</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
-                <div class="stat-circle">
-                    <svg viewBox="0 0 120 120">
-                        <circle class="track" cx="60" cy="60" r="50"/>
-                        <circle class="progress" cx="60" cy="60" r="50" data-percent="55" style="stroke-dasharray:0 314;"/>
-                    </svg>
-                    <div class="stat-value" data-target="150">0<span>+</span></div>
-                </div>
-                <div class="stat-label" data-i18n="stat-trained">Apprenants formés</div>
-                <div class="stat-desc" data-i18n="stat-trained-desc">Professionnels et étudiants</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon"><i class="fas fa-handshake"></i></div>
-                <div class="stat-circle">
-                    <svg viewBox="0 0 120 120">
-                        <circle class="track" cx="60" cy="60" r="50"/>
-                        <circle class="progress" cx="60" cy="60" r="50" data-percent="50" style="stroke-dasharray:0 314;"/>
-                    </svg>
-                    <div class="stat-value" data-target="20">0<span>+</span></div>
-                </div>
-                <div class="stat-label" data-i18n="stat-partners">Partenaires actifs</div>
-                <div class="stat-desc" data-i18n="stat-partners-desc">Un réseau solide</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= POURQUOI NOUS FAIRE CONFIANCE ================= -->
 <section class="trust-section">
     <div class="container">
         <div class="trust-header">
@@ -748,8 +209,6 @@
         </div>
     </div>
 </section>
-
-<!-- ================= NOS FORMATIONS ================= -->
 <section class="formations-section" id="formations">
     <div class="container">
         <div class="formations-header">
@@ -886,8 +345,6 @@
         </div>
     </div>
 </section>
-
-<!-- ================= TÉMOIGNAGES CLIENTS ================= -->
 <section class="testimonials-section" id="temoignages">
     <div class="container">
         <div class="testimonials-header">
@@ -905,7 +362,7 @@
                 <div class="testi-profile">
                     <div class="testi-avatar">BP</div>
                     <div class="testi-info">
-                        <h5 data-i18n="testimonial1-name">Dr. BECOULE Patrick</h5>
+                        <h5 data-i18n="testimonial1-name">Dr. BEKOULE Patrick</h5>
                         <span data-i18n="testimonial1-role">Hopital de District — Obala</span>
                     </div>
                 </div>
@@ -988,8 +445,6 @@
         </div>
     </div>
 </section>
-
-<!-- ================= BOUTON RDV CIRCULAIRE ================= -->
 <button class="floating-rdv" id="openRdvModal" onclick="document.getElementById('rdvModalOverlay').classList.add('open')">
     <i class="fas fa-calendar-check"></i>
     <span class="btn-text" data-i18n="btn-appointment">Prendre RDV</span>
@@ -1126,8 +581,6 @@
         </div>
     </div>
 </div>
-
-<!-- ================= PRE FOOTER ================= -->
 <div class="pre-footer" id="contact">
     <div class="container">
         <div class="row">
@@ -1135,9 +588,9 @@
                 <h5 data-i18n="quick-links">Liens rapides</h5>
                 <ul>
                     <li><a href="#accueil" data-i18n="nav-home">Accueil</a></li>
-                    <li><a href="#apropos" data-i18n="nav-about">À propos</a></li>
-                    <li><a href="#services" data-i18n="nav-services">Services</a></li>
-                    <li><a href="#produits" data-i18n="nav-products">Nos Produits</a></li>
+                    <li><a href="apropos.html" data-i18n="nav-about">À propos</a></li>
+                    <li><a href="services.html" data-i18n="nav-services">Services</a></li>
+                    <li><a href="produits.html" data-i18n="nav-products">Nos Produits</a></li>
                     <li><a href="#formations" data-i18n="nav-training">Formations</a></li>
                     <li><a href="#temoignages" data-i18n="nav-testimonials">Témoignages</a></li>
                     <li><a href="#partenaires" data-i18n="nav-partners">Partenaires</a></li>
@@ -1180,7 +633,7 @@
     </defs>
 </svg>
 
-<!-- Scripts externes -->
+<<!-- Scripts externes -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

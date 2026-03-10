@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="Logo.jpg">
+    <title>Nos Produits - GEC Informatique Sarl</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address">CHAPELLE NGOUSSO - Yaoundé</span>
+            <i class="fas fa-envelope ml-3"></i> <span data-i18n="contact-email">contacts@gec-informatique.com</span>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="social mr-3">
+                <a href="https://www.facebook.com/gecinformatique/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/237693538376" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/company/gec-informatique/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="language-selector">
+                <span class="lang-flag" id="lang-toggle" onclick="toggleLanguage()">
+                    <img id="lang-flag-img" src="https://flagcdn.com/w40/gb.png" alt="Switch to English" title="Switch to English">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<div class="main-header" id="mainHeader">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="brand-area">
+                    <img src="images/Logo.jpg" width="100" alt="Logo GEC Informatique">
+                    <div class="brand-text">
+                        <h3>GEC INFORMATIQUE SARL</h3>
+                        <small data-i18n="header-slogan">La numérisation au service de la Gestion</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 whatsapp-box">
+                <h6 data-i18n="whatsapp-title">Contactez-nous via WhatsApp</h6>
+                <p><i class="fab fa-whatsapp"></i> +237 694 98 98 64</p>
+                <p><i class="fab fa-whatsapp"></i> +237 693 53 83 76</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar sticky-navbar" id="mainNav">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav-home">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="apropos.html" data-i18n="nav-about">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav-services">Services</a></li>
+                <li class="nav-item active"><a class="nav-link" href="produits.html" data-i18n="nav-products">Nos Produits</a></li>
+                <li class="nav-item"><a class="nav-link" href="actualites.html" data-i18n="nav-news">Actualités</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= PAGE HERO ================= -->
+<div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1400&q=80');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+        <div class="breadcrumb-nav mb-3">
+            <a href="index.html"><i class="fas fa-home mr-1"></i> Accueil</a>
+            <span class="breadcrumb-sep">/</span>
+            <span data-i18n="nav-products">Nos Produits</span>
+        </div>
+        <h1 data-i18n="produits-page-title">Nos Produits</h1>
+        <p data-i18n="produits-page-desc">Des solutions technologiques conçues en Afrique pour l'Afrique. Robustes, adaptées aux réalités locales et constamment améliorées.</p>
+    </div>
+</div>
+
+<!-- ================= GCM PRODUCT ================= -->
+<section class="product-hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="product-hero-label"><i class="fas fa-laptop-medical mr-2"></i><span data-i18n="product-gcm-badge">Logiciel médical</span></div>
+                <h2 class="product-hero-title" data-i18n="product-gcm-title">Logiciel <span>GCM</span><br>Gestion des Centres Médicaux</h2>
+                <p class="product-desc" data-i18n="product-gcm-desc">GCM est la solution de référence pour la gestion informatisée des établissements de santé au Cameroun. Développé par GEC Informatique, il répond précisément aux besoins des cliniques, hôpitaux et centres de santé avec une interface intuitive, disponible hors ligne.</p>
+                <p class="product-desc" data-i18n="product-gcm-desc2">Conçu pour fonctionner dans un contexte africain (connectivité variable, formation rapide des utilisateurs), GCM simplifie chaque processus : de l'accueil du patient à la facturation, en passant par la gestion des stocks et des rendez-vous.</p>
+                <ul class="product-features-list">
+                    <li><i class="fas fa-check-circle"></i><span data-i18n="feature-patients">Gestion des patients</span></li>
+                    <li><i class="fas fa-check-circle"></i><span data-i18n="feature-pharmacy">Pharmacie intégrée</span></li>
+                    <li><i class="fas fa-check-circle"></i><span data-i18n="feature-lab">Laboratoire & analyses</span></li>
+                    <li><i class="fas fa-check-circle"></i><span data-i18n="feature-invoicing">Facturation & caisse</span></li>
+                    <li><i class="fas fa-check-circle"></i><span data-i18n="feature-dashboard">Tableau de bord analytique</span></li>
+                    <li><i class="fas fa-check-circle"></i><span data-i18n="feature-appointments">Gestion des rendez-vous</span></li>
+                    <li><i class="fas fa-check-circle"></i><span data-i18n="feature-multiuser">Multi-utilisateurs & rôles</span></li>
+                    <li><i class="fas fa-check-circle"></i><span data-i18n="feature-gcm-backup">Sauvegarde automatique</span></li>
+                </ul>
+                <div class="product-actions-wrap">
+                    <a href="https://wa.me/237694989864" class="btn-product-primary" target="_blank"><i class="fab fa-whatsapp"></i> <span data-i18n="btn-demo">Demander une démo</span></a>
+                    <a href="https://wa.me/237694989864" class="btn-product-outline" target="_blank"><i class="fas fa-file-pdf"></i> <span data-i18n="product-gcm-brochure">Brochure PDF</span></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gcm-mockup-wrap">
+                    <div class="gcm-mockup-bar">
+                        <div class="gcm-dot" style="background:#ff5f57;"></div>
+                        <div class="gcm-dot" style="background:#febc2e;"></div>
+                        <div class="gcm-dot" style="background:#28c840;"></div>
+                        <span class="gcm-bar-title" data-i18n="gcm-mockup-title">GCM — Tableau de bord principal</span>
+                    </div>
+                    <div class="gcm-mockup-screen">
+                        <img src="images/home.png" alt="Interface GCM">
+                    </div>
+                    <div class="gcm-badge-float">
+                        <div>
+                            <strong data-i18n="gcm-clinics-count">50+ cliniques</strong>
+                            <small data-i18n="gcm-clinics-label">utilisent GCM au Cameroun</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= MODULES GCM ================= -->
+<section class="modules-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge" data-i18n="modules-badge">FONCTIONNALITÉS DÉTAILLÉES</span>
+            <h2 class="section-title" data-i18n="modules-title">Les <span>modules</span> du logiciel GCM</h2>
+            <div class="section-divider mx-auto"></div>
+        </div>
+
+        <div class="module-tabs" id="moduleTabs">
+            <button class="module-tab-btn active" data-panel="patients"><i class="fas fa-user-injured"></i> <span data-i18n="module-tab-patients">Patients</span></button>
+            <button class="module-tab-btn" data-panel="pharma"><i class="fas fa-pills"></i> <span data-i18n="module-tab-pharma">Pharmacie</span></button>
+            <button class="module-tab-btn" data-panel="labo"><i class="fas fa-flask"></i> <span data-i18n="module-tab-labo">Laboratoire</span></button>
+            <button class="module-tab-btn" data-panel="factu"><i class="fas fa-file-invoice-dollar"></i> <span data-i18n="module-tab-factu">Facturation</span></button>
+            <button class="module-tab-btn" data-panel="rdv"><i class="fas fa-calendar-check"></i> <span data-i18n="module-tab-rdv">Rendez-vous</span></button>
+        </div>
+
+        <div class="module-panel active" id="panel-patients">
+            <div class="module-panel-img">
+                <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80" alt="Gestion patients">
+            </div>
+            <div class="module-panel-content">
+                <h4 data-i18n="module-patients-title">Gestion complète des patients</h4>
+                <p data-i18n="module-patients-text1">Créez et gérez les dossiers médicaux complets de chaque patient : informations personnelles, historique des consultations, antécédents médicaux, résultats d'examens et ordonnances. Retrouvez un dossier en quelques secondes grâce à la recherche avancée.</p>
+                <p data-i18n="module-patients-text2">Le module patient est le cœur du système : toutes les autres fonctions (pharmacie, laboratoire, facturation) sont connectées au dossier patient pour un suivi 360° en temps réel.</p>
+                <div>
+                    <span class="module-feature-tag" data-i18n="mtag-dme">Dossier médical électronique</span>
+                    <span class="module-feature-tag" data-i18n="mtag-history">Historique des consultations</span>
+                    <span class="module-feature-tag" data-i18n="mtag-orders">Ordonnances numériques</span>
+                    <span class="module-feature-tag" data-i18n="mtag-search">Recherche rapide</span>
+                    <span class="module-feature-tag" data-i18n="mtag-blood">Groupes sanguins & allergies</span>
+                    <span class="module-feature-tag" data-i18n="mtag-print">Impression des fiches</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="module-panel" id="panel-pharma">
+            <div class="module-panel-img">
+                <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?w=600&q=80" alt="Pharmacie">
+            </div>
+            <div class="module-panel-content">
+                <h4 data-i18n="module-pharma-title">Gestion de la pharmacie</h4>
+                <p data-i18n="module-pharma-text1">Gérez votre stock de médicaments en temps réel avec des alertes automatiques de rupture de stock. Liez directement les ordonnances médicales à la pharmacie pour une dispensation rapide et sécurisée.</p>
+                <p data-i18n="module-pharma-text2">Suivez les entrées/sorties, gérez les fournisseurs et générez des rapports d'inventaire détaillés pour optimiser vos achats.</p>
+                <div>
+                    <span class="module-feature-tag" data-i18n="mtag-stock">Gestion des stocks</span>
+                    <span class="module-feature-tag" data-i18n="mtag-expiry">Alertes de péremption</span>
+                    <span class="module-feature-tag" data-i18n="mtag-prescriptions">Lien ordonnances</span>
+                    <span class="module-feature-tag" data-i18n="mtag-suppliers">Gestion fournisseurs</span>
+                    <span class="module-feature-tag" data-i18n="mtag-inventory">Rapports d'inventaire</span>
+                    <span class="module-feature-tag" data-i18n="mtag-barcode">Codes-barres</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="module-panel" id="panel-labo">
+            <div class="module-panel-img">
+                <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=600&q=80" alt="Laboratoire">
+            </div>
+            <div class="module-panel-content">
+                <h4 data-i18n="module-labo-title">Module laboratoire</h4>
+                <p data-i18n="module-labo-text">Centralisez toutes les demandes d'analyses et les résultats des examens biologiques directement dans le dossier patient. Les résultats sont immédiatement accessibles aux médecins et peuvent être imprimés ou partagés.</p>
+                <div>
+                    <span class="module-feature-tag" data-i18n="mtag-analyses">Gestion des analyses</span>
+                    <span class="module-feature-tag" data-i18n="mtag-results">Résultats électroniques</span>
+                    <span class="module-feature-tag" data-i18n="mtag-link-patient">Liaison dossier patient</span>
+                    <span class="module-feature-tag" data-i18n="mtag-print-results">Impression des résultats</span>
+                    <span class="module-feature-tag" data-i18n="mtag-exam-history">Historique des examens</span>
+                    <span class="module-feature-tag" data-i18n="mtag-labo-stats">Statistiques labo</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="module-panel" id="panel-factu">
+            <div class="module-panel-img">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80" alt="Facturation">
+            </div>
+            <div class="module-panel-content">
+                <h4 data-i18n="module-factu-title">Facturation & Caisse</h4>
+                <p data-i18n="module-factu-text1">Générez des factures automatiquement à partir des consultations, actes médicaux et médicaments dispensés. Gérez les paiements en espèces ou par mobile money, les remises et les avances sur ordonnance.</p>
+                <p data-i18n="module-factu-text2">Le tableau de bord financier vous donne une vue claire des recettes journalières, hebdomadaires et mensuelles.</p>
+                <div>
+                    <span class="module-feature-tag" data-i18n="mtag-auto-invoice">Facturation automatique</span>
+                    <span class="module-feature-tag" data-i18n="mtag-mobile-money">Mobile money</span>
+                    <span class="module-feature-tag" data-i18n="mtag-receipts">Reçus imprimables</span>
+                    <span class="module-feature-tag" data-i18n="mtag-financial">Rapports financiers</span>
+                    <span class="module-feature-tag" data-i18n="mtag-discounts">Gestion des remises</span>
+                    <span class="module-feature-tag" data-i18n="mtag-collections">Suivi des encaissements</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="module-panel" id="panel-rdv">
+            <div class="module-panel-img">
+                <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600&q=80" alt="Rendez-vous">
+            </div>
+            <div class="module-panel-content">
+                <h4 data-i18n="module-rdv-title">Gestion des rendez-vous</h4>
+                <p data-i18n="module-rdv-text">Planifiez et gérez les rendez-vous de vos patients avec un calendrier intuitif. Évitez les chevauchements, envoyez des rappels automatiques et optimisez le planning de vos médecins.</p>
+                <div>
+                    <span class="module-feature-tag" data-i18n="mtag-calendar">Calendrier multi-médecins</span>
+                    <span class="module-feature-tag" data-i18n="mtag-reminders">Rappels automatiques</span>
+                    <span class="module-feature-tag" data-i18n="mtag-absences">Gestion des absences</span>
+                    <span class="module-feature-tag" data-i18n="mtag-queue">File d'attente digitale</span>
+                    <span class="module-feature-tag" data-i18n="mtag-consult-stats">Statistiques consultations</span>
+                    <span class="module-feature-tag" data-i18n="mtag-views">Vue journalière/hebdo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ALL-WORKER ================= -->
+<section class="allworker-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="aw-badge"><i class="fas fa-briefcase mr-2"></i><span data-i18n="product-allworker-badge">Plateforme RH</span></div>
+                <h2 class="aw-title">ALL-<span>WORKER</span></h2>
+                <p class="aw-desc" data-i18n="product-allworker-desc">La plateforme innovante de mise en relation entre talents et entreprises au Cameroun. Une tâche, un métier : trouvez rapidement le bon professionnel ou la bonne opportunité.</p>
+                <ul class="aw-features">
+                    <li><i class="fas fa-user-check"></i><span data-i18n="feature-profiles">Profils professionnels vérifiés et détaillés</span></li>
+                    <li><i class="fas fa-search"></i><span data-i18n="feature-search">Recherche ciblée par compétences, localisation, disponibilité</span></li>
+                    <li><i class="fas fa-bolt"></i><span data-i18n="feature-matching">Matching intelligent entre offres et talents</span></li>
+                    <li><i class="fas fa-star"></i><span data-i18n="aw-feature-rating">Système de notation et d'avis vérifiés</span></li>
+                    <li><i class="fas fa-mobile-alt"></i><span data-i18n="feature-mobile">Application mobile iOS & Android</span></li>
+                    <li><i class="fas fa-headset"></i><span data-i18n="feature-support">Support dédié et accompagnement personnalisé</span></li>
+                </ul>
+                <div>
+                    <a href="https://all-worker.com" class="btn-aw-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Visiter all-worker.com</a>
+                    <a href="https://wa.me/237694989864" class="btn-aw-outline" target="_blank"><i class="fab fa-whatsapp"></i> <span data-i18n="aw-learn-more">En savoir plus</span></a>
+                </div>
+                <div class="aw-stat-cards">
+                    <div class="aw-stat">
+                        <strong>1000+</strong>
+                        <small data-i18n="aw-stat-talents">Talents inscrits</small>
+                    </div>
+                    <div class="aw-stat">
+                        <strong>200+</strong>
+                        <small data-i18n="aw-stat-companies">Entreprises partenaires</small>
+                    </div>
+                    <div class="aw-stat">
+                        <strong>95%</strong>
+                        <small data-i18n="aw-stat-satisfaction">Taux de satisfaction</small>
+                    </div>
+                    <div class="aw-stat">
+                        <strong>500+</strong>
+                        <small data-i18n="aw-stat-matches">Mises en relation réussies</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+                <div class="aw-mockup">
+                    <div class="aw-mockup-header">
+                        <div class="aw-mockup-dot" style="background:#ff5f57;"></div>
+                        <div class="aw-mockup-dot" style="background:#febc2e;"></div>
+                        <div class="aw-mockup-dot" style="background:#28c840;"></div>
+                        <div class="aw-mockup-url">all-worker.com</div>
+                    </div>
+                    <img class="aw-mockup-img" src="images/all.jpeg" alt="ALL-WORKER Platform">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= COMPARAISON ================= -->
+<section class="compare-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge" data-i18n="compare-badge">TABLEAU COMPARATIF</span>
+            <h2 class="section-title" data-i18n="compare-title">GCM vs. solutions <span>concurrentes</span></h2>
+            <div class="section-divider mx-auto"></div>
+            <p style="color:#5a6a7a;max-width:550px;margin:0 auto;" data-i18n="compare-subtitle">Pourquoi choisir GCM pour votre établissement de santé ?</p>
+        </div>
+        <div class="table-responsive">
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th data-i18n="compare-feature">Fonctionnalité</th>
+                        <th style="background:var(--blue-main);">GCM (GEC)</th>
+                        <th data-i18n="compare-foreign">Solutions étrangères</th>
+                        <th data-i18n="compare-generic">Logiciels génériques</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-i18n="compare-row1">Adapté au contexte camerounais</td><td><i class="fas fa-check-circle check"></i></td><td><i class="fas fa-times-circle cross"></i></td><td><i class="fas fa-times-circle cross"></i></td></tr>
+                    <tr><td data-i18n="compare-row2">Fonctionnement hors ligne</td><td><i class="fas fa-check-circle check"></i></td><td><i class="fas fa-times-circle cross"></i></td><td><i class="fas fa-times-circle cross"></i></td></tr>
+                    <tr><td data-i18n="compare-row3">Interface en français</td><td><i class="fas fa-check-circle check"></i></td><td data-i18n="compare-partial">Partiel</td><td data-i18n="compare-partial">Partiel</td></tr>
+                    <tr><td data-i18n="compare-row4">Support local (Yaoundé)</td><td><i class="fas fa-check-circle check"></i></td><td><i class="fas fa-times-circle cross"></i></td><td><i class="fas fa-times-circle cross"></i></td></tr>
+                    <tr><td data-i18n="compare-row5">Tarif adapté au marché local</td><td><i class="fas fa-check-circle check"></i></td><td><i class="fas fa-times-circle cross"></i></td><td data-i18n="compare-partial">Partiel</td></tr>
+                    <tr><td data-i18n="compare-row6">Formation incluse</td><td><i class="fas fa-check-circle check"></i></td><td data-i18n="compare-option">En option</td><td><i class="fas fa-times-circle cross"></i></td></tr>
+                    <tr><td data-i18n="compare-row7">Modules médicaux intégrés</td><td><i class="fas fa-check-circle check"></i></td><td><i class="fas fa-check-circle check"></i></td><td><i class="fas fa-times-circle cross"></i></td></tr>
+                    <tr><td data-i18n="compare-row8">Personnalisation sur mesure</td><td><i class="fas fa-check-circle check"></i></td><td data-i18n="compare-limited">Limité</td><td data-i18n="compare-limited">Limité</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-section">
+    <div class="container" style="position:relative;z-index:2;">
+        <h2 data-i18n="produits-cta-title">Prêt à tester nos solutions ?</h2>
+        <p data-i18n="produits-cta-text">Demandez une démonstration gratuite de GCM ou ALL-WORKER. Nos experts vous présentent les fonctionnalités en moins d'une heure.</p>
+        <div>
+            <a href="https://wa.me/237694989864" class="cta-btn-white" target="_blank"><i class="fab fa-whatsapp"></i> <span data-i18n="btn-demo">Demander une démo</span></a>
+            <a href="services.html" class="cta-btn-outline-white"><i class="fas fa-cogs"></i> <span data-i18n="nav-services">Voir nos services</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TÉMOIGNAGES GCM ================= -->
+<section class="gcm-testimonials-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge" data-i18n="gcm-testi-badge">ILS UTILISENT GCM</span>
+            <h2 class="section-title" data-i18n="gcm-testi-title">Ce que disent nos <span>utilisateurs GCM</span></h2>
+            <div class="section-divider mx-auto"></div>
+            <p class="body-text" style="max-width:600px;margin:0 auto;" data-i18n="gcm-testi-desc">Des établissements de santé camerounais témoignent de leur expérience avec notre logiciel GCM.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gcm-testi-card">
+                    <div class="gcm-testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="gcm-testi-text" data-i18n="gcm-testimonial1">GCM a transformé la gestion de notre hôpital. La facturation est désormais automatique, nos patients ne font plus la queue, et nous avons une visibilité totale sur nos recettes en temps réel.</p>
+                    <div class="gcm-testi-author">
+                        <div class="gcm-testi-avatar">BP</div>
+                        <div class="gcm-testi-author-info">
+                            <strong data-i18n="gcm-testimonial1-name">Dr. BEKOULE Patrick</strong>
+                            <small data-i18n="gcm-testimonial1-role">Hôpital de District — Obala</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gcm-testi-card">
+                    <div class="gcm-testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="gcm-testi-text" data-i18n="gcm-testimonial2">Le module pharmacie est excellent : les alertes de rupture de stock nous ont évité plusieurs situations critiques. L'équipe GEC est réactive et disponible. Je recommande GCM à tous les établissements de santé.</p>
+                    <div class="gcm-testi-author">
+                        <div class="gcm-testi-avatar">ME</div>
+                        <div class="gcm-testi-author-info">
+                            <strong data-i18n="gcm-testimonial2-name">Dr. MINYEM Emmanuel</strong>
+                            <small data-i18n="gcm-testimonial2-role">Hôpital de District — Biyem-Assi</small>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gcm-testi-card">
+                    <div class="gcm-testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="gcm-testi-text" data-i18n="gcm-testimonial3">Ce qui m'a séduit avec GCM, c'est sa simplicité d'utilisation même pour notre personnel peu habitué aux outils informatiques. La formation incluse a été très complète. Nous sommes très satisfaits.</p>
+                    <div class="gcm-testi-author">
+                        <div class="gcm-testi-avatar">DD</div>
+                        <div class="gcm-testi-author-info">
+                            <strong data-i18n="gcm-testimonial3-name">Dr. DAOUDA</strong>
+                            <small data-i18n="gcm-testimonial3-role">Clinique Saint Luc — Yaoundé</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gcm-testi-card">
+                    <div class="gcm-testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="gcm-testi-text" data-i18n="gcm-testimonial4">Nous gérons nos dossiers patients, nos rendez-vous et notre laboratoire depuis un seul tableau de bord. GCM fonctionne même sans internet, ce qui est crucial pour notre zone. Un vrai changement pour notre clinique.</p>
+                    <div class="gcm-testi-author">
+                        <div class="gcm-testi-avatar">AN</div>
+                        <div class="gcm-testi-author-info">
+                            <strong data-i18n="gcm-testimonial4-name">Dr. ABANDA Nkoa</strong>
+                            <small data-i18n="gcm-testimonial4-role">Centre Médical de Mbalmayo</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gcm-testi-card">
+                    <div class="gcm-testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="gcm-testi-text" data-i18n="gcm-testimonial5">La gestion de la caisse et des assurances est devenue fluide grâce à GCM. Le support de l'équipe GEC est exceptionnel. Chaque fois que nous avons un souci, ils sont là en quelques minutes. Excellent logiciel !</p>
+                    <div class="gcm-testi-author">
+                        <div class="gcm-testi-avatar">TF</div>
+                        <div class="gcm-testi-author-info">
+                            <strong data-i18n="gcm-testimonial5-name">TALLA Françoise</strong>
+                            <small data-i18n="gcm-testimonial5-role">Administratrice — Polyclinique Sainte Anne</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="gcm-testi-card">
+                    <div class="gcm-testi-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="gcm-testi-text" data-i18n="gcm-testimonial6">GCM a réduit notre temps de traitement administratif de plus de 60%. Le personnel s'est adapté rapidement grâce à la formation offerte. Je conseille vivement ce logiciel à tous mes confrères au Cameroun.</p>
+                    <div class="gcm-testi-author">
+                        <div class="gcm-testi-avatar">KJ</div>
+                        <div class="gcm-testi-author-info">
+                            <strong data-i18n="gcm-testimonial6-name">Dr. KAMGA Jean</strong>
+                            <small data-i18n="gcm-testimonial6-role">Directeur — Clinique de l'Espoir</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Score global -->
+        <div class="text-center mt-4">
+            <div style="display:inline-flex;align-items:center;gap:30px;background:white;padding:20px 40px;border-radius:20px;box-shadow:0 10px 35px -10px rgba(11,61,145,0.12);border:1px solid rgba(15,82,186,0.08);">
+                <div style="text-align:center;">
+                    <div style="font-size:2.8rem;font-weight:900;color:var(--blue-main);">4</div>
+                    <div style="color:#f59e0b;font-size:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div style="font-size:0.8rem;color:#6a7a8a;" data-i18n="score-average">Note moyenne</div>
+                </div>
+                <div style="width:1px;height:60px;background:rgba(15,82,186,0.1);"></div>
+                <div style="text-align:center;">
+                    <div style="font-size:2.8rem;font-weight:900;color:var(--blue-main);">50+</div>
+                    <div style="font-size:0.8rem;color:#6a7a8a;" data-i18n="gcm-clinics-count-label">Cliniques utilisatrices</div>
+                </div>
+                <div style="width:1px;height:60px;background:rgba(15,82,186,0.1);"></div>
+                <div style="text-align:center;">
+                    <div style="font-size:2.8rem;font-weight:900;color:var(--blue-main);">98%</div>
+                    <div style="font-size:0.8rem;color:#6a7a8a;" data-i18n="score-satisfaction">Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PRE FOOTER ================= -->
+<div class="pre-footer" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5 data-i18n="quick-links">Liens rapides</h5>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav-home">Accueil</a></li>
+                    <li><a href="apropos.html" data-i18n="nav-about">À propos</a></li>
+                    <li><a href="services.html" data-i18n="nav-services">Services</a></li>
+                    <li><a href="produits.html" data-i18n="nav-products">Nos Produits</a></li>
+                    <li><a href="actualites.html" data-i18n="nav-news">Actualités</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="about">À propos</h5>
+                <p data-i18n="footer-about">GEC Informatique est une entreprise spécialisée dans les services technologiques et la formation au Cameroun.</p>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="contact">Contact</h5>
+                <p><i class="fas fa-envelope"></i> contacts@gec-informatique.com</p>
+                <p><i class="fas fa-phone"></i> +237 693 53 83 76</p>
+                <p><i class="fab fa-whatsapp"></i> +237 694 98 98 64</p>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address">Chapelle Ngousso, Yaoundé</span></p>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="follow-us">Suivez-nous</h5>
+                <div style="display:flex;gap:12px;">
+                    <a href="https://www.facebook.com/gecinformatique/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/237693538376" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/company/gec-informatique/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-divider"></div>
+<div class="footer">&copy; 2026 GEC Informatique Sarl - <span data-i18n="rights">Tous droits réservés.</span></div>
+
+<!-- ================= BOUTON RDV CIRCULAIRE ================= -->
+<button class="floating-rdv" id="openRdvModal" onclick="document.getElementById('rdvModalOverlay').classList.add('open')">
+    <i class="fas fa-calendar-check"></i>
+    <span class="btn-text" data-i18n="btn-appointment">Prendre RDV</span>
+</button>
+
+<!-- ================= BACK TO TOP ================= -->
+<a href="#" class="back-to-top" id="backToTop" title="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<!-- ================= MODAL RDV ================= -->
+<div class="rdv-modal-overlay" id="rdvModalOverlay" onclick="if(event.target===this)this.classList.remove('open')">
+    <div class="rdv-modal">
+        <div class="rdv-modal-header">
+            <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:42px;height:42px;background:rgba(255,255,255,.15);border-radius:12px;display:flex;align-items:center;justify-content:center;">
+                    <i class="fas fa-calendar-check" style="color:#fff;font-size:20px;"></i>
+                </div>
+                <div>
+                    <h3 style="margin:0;" data-i18n="modal-appointment-title">Prendre Rendez-vous</h3>
+                    <p style="margin:0;" data-i18n="modal-appointment-subtitle">Réponse sous 24h</p>
+                </div>
+            </div>
+            <button class="rdv-modal-close" onclick="document.getElementById('rdvModalOverlay').classList.remove('open')">&times;</button>
+        </div>
+        <div class="rdv-modal-body">
+            <form id="rdvForm" action="https://formspree.io/f/xdaljzlj" method="POST">
+                <div class="rdv-form-row">
+                    <div class="rdv-form-group"><label data-i18n="form-name">Nom <span>*</span></label><input type="text" name="nom" required></div>
+                    <div class="rdv-form-group"><label data-i18n="form-phone">Téléphone <span>*</span></label><input type="tel" name="telephone" required></div>
+                </div>
+                <div class="rdv-form-group"><label data-i18n="form-email">Email <span>*</span></label><input type="email" name="email" required></div>
+                <div class="rdv-form-group">
+                    <label data-i18n="form-service">Service <span>*</span></label>
+                    <select name="service" required>
+                        <option value="" disabled selected data-i18n="form-select">-- Sélectionnez --</option>
+                        <option data-i18n="service-carebed">Location lits garde malade</option>
+                        <option data-i18n="service-hospbed">Location lits hospitalisation</option>
+                        <option data-i18n="service-surveillance">Installation vidéo surveillance</option>
+                        <option data-i18n="service-software">Développement logiciel</option>
+                        <option data-i18n="service-training">Formation TIC</option>
+                        <option data-i18n="service-maintenance">Maintenance & Support</option>
+                        <option data-i18n="service-web">Sites & Plateformes web</option>
+                        <option data-i18n="service-gcm">Logiciel GCM</option>
+                        <option data-i18n="service-allworker">Plateforme ALL-WORKER</option>
+                        <option data-i18n="service-other">Autre</option>
+                    </select>
+                </div>
+                <div class="rdv-form-row">
+                    <div class="rdv-form-group"><label data-i18n="form-date">Date</label><input type="date" name="date"></div>
+                    <div class="rdv-form-group"><label data-i18n="form-time">Heure</label>
+                        <select name="heure">
+                            <option value="" data-i18n="form-select-time">--</option>
+                            <option>08-10h</option><option>10-12h</option><option>12-14h</option>
+                            <option>14-16h</option><option>16-18h</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rdv-form-group"><label data-i18n="form-message">Message</label><textarea name="message"></textarea></div>
+                <input type="hidden" name="_subject" value="Nouveau RDV">
+                <button type="submit" class="rdv-submit-btn" data-i18n="btn-submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
+            </form>
+            <div class="rdv-success-msg" id="rdvSuccess">
+                <div class="rdv-check"><i class="fas fa-check"></i></div>
+                <h4 data-i18n="success-appointment-title">Demande envoyée !</h4>
+                <p data-i18n="success-appointment-text">Nous vous contacterons sous 24h.</p>
+                <button onclick="document.getElementById('rdvModalOverlay').classList.remove('open')" data-i18n="btn-close">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute">
+    <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#5da8ff;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#00e0ff;stop-opacity:1"/>
+        </linearGradient>
+    </defs>
+</svg>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="translations.js"></script>
+<script src="scripts.js"></script>
+<script>
+// Module tabs interaction
+document.querySelectorAll('.module-tab-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.module-tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.module-panel').forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+        const panel = document.getElementById('panel-' + this.dataset.panel);
+        if (panel) panel.classList.add('active');
+    });
+});
+</script>
+</body>
+</html>

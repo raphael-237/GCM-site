@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="Logo.jpg">
+    <title>À propos - GEC Informatique Sarl</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address">CHAPELLE NGOUSSO - Yaoundé</span>
+            <i class="fas fa-envelope ml-3"></i> <span data-i18n="contact-email">contacts@gec-informatique.com</span>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="social mr-3">
+                <a href="https://www.facebook.com/gecinformatique/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/237693538376" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/company/gec-informatique/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="language-selector">
+                <span class="lang-flag" id="lang-toggle" onclick="toggleLanguage()">
+                    <img id="lang-flag-img" src="https://flagcdn.com/w40/gb.png" alt="Switch to English" title="Switch to English">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<div class="main-header" id="mainHeader">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="brand-area">
+                    <img src="images/Logo.jpg" width="100" alt="Logo GEC Informatique">
+                    <div class="brand-text">
+                        <h3>GEC INFORMATIQUE SARL</h3>
+                        <small data-i18n="header-slogan">La numérisation au service de la Gestion</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 whatsapp-box">
+                <h6 data-i18n="whatsapp-title">Contactez-nous via WhatsApp</h6>
+                <p><i class="fab fa-whatsapp"></i> +237 694 98 98 64</p>
+                <p><i class="fab fa-whatsapp"></i> +237 693 53 83 76</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar sticky-navbar" id="mainNav">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav-home">Accueil</a></li>
+                <li class="nav-item active"><a class="nav-link" href="apropos.html" data-i18n="nav-about">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav-services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="produits.html" data-i18n="nav-products">Nos Produits</a></li>
+                <li class="nav-item"><a class="nav-link" href="actualites.html" data-i18n="nav-news">Actualités</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= PAGE HERO ================= -->
+<div class="page-hero text-center">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1400&q=80');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+        <div class="breadcrumb-nav mb-3">
+            <a href="index.html"><i class="fas fa-home mr-1"></i> Accueil</a>
+            <span class="breadcrumb-sep">/</span>
+            <span data-i18n="nav-about">À propos</span>
+        </div>
+        <h1 data-i18n="apropos-page-title">À propos de GEC Informatique</h1>
+        <p data-i18n="apropos-page-desc">Pionniers de la transformation numérique au Cameroun depuis 2016, nous allions innovation technologique et proximité humaine.</p>
+    </div>
+</div>
+
+<!-- ================= STATS BAND ================= -->
+<div class="stats-band">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-2 stat-band-item">
+                <span class="num">2016</span>
+                <span class="lbl" data-i18n="stat-band-year">Année de fondation</span>
+            </div>
+            <div class="col-6 col-md-2 stat-band-item">
+                <span class="num">50+</span>
+                <span class="lbl" data-i18n="stat-band-clients">Clients accompagnés</span>
+            </div>
+            <div class="col-6 col-md-2 stat-band-item">
+                <span class="num">100+</span>
+                <span class="lbl" data-i18n="stat-band-projects">Projets réalisés</span>
+            </div>
+            <div class="col-6 col-md-2 stat-band-item">
+                <span class="num">200+</span>
+                <span class="lbl" data-i18n="stat-band-learners">Apprenants formés</span>
+            </div>
+            <div class="col-6 col-md-2 stat-band-item">
+                <span class="num">80%</span>
+                <span class="lbl" data-i18n="stat-band-satisfaction">Satisfaction client</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= NOTRE HISTOIRE ================= -->
+<section class="story-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <span class="section-badge" data-i18n="about-subtitle">QUI SOMMES-NOUS</span>
+                <h2 class="section-title" data-i18n="story-title">Une entreprise <span>camerounaise</span> au cœur de l'innovation</h2>
+                <div class="section-divider"></div>
+                <p class="lead-text" data-i18n="about-lead">Fondée en 2016 à Yaoundé par NOUFACK Delmas, GEC Informatique Sarl est une entreprise innovante spécialisée dans les solutions technologiques pour le secteur médical et les services numériques au Cameroun.</p>
+                <p class="body-text" data-i18n="about-text1">Notre expertise principale repose sur le développement de logiciels de gestion pour les établissements de santé, notamment notre solution phare GCM (Gestion des Centres Médicaux) qui équipe aujourd'hui plusieurs hôpitaux et cliniques à travers le pays.</p>
+                <p class="body-text" data-i18n="about-text2">Au-delà du développement logiciel, nous proposons des services variés : location de lits médicalisés, installation de systèmes de vidéosurveillance, formation professionnelle en TIC, et développement d'applications sur mesure pour les entreprises.</p>
+                <p class="body-text" data-i18n="story-vision">Notre vision est claire : <strong>rendre la technologie accessible à tous</strong> et contribuer activement à la digitalisation du Cameroun, un projet à la fois.</p>
+                <div class="mt-4">
+                    <a href="services.html" class="btn-blue mr-3" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;">
+                        <i class="fas fa-cogs"></i> <span data-i18n="nav-services">Nos services</span>
+                    </a>
+                    <a href="https://wa.me/237694989864" style="display:inline-flex;align-items:center;gap:8px;color:var(--blue-main);font-weight:600;text-decoration:none;">
+                        <i class="fas fa-phone"></i> <span data-i18n="btn-contact">Nous contacter</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="story-img-wrapper">
+                    <img src="images/Logo.jpg" alt="Équipe GEC Informatique">
+                    <div class="story-badge">
+                        <div class="badge-icon"><i class="fas fa-award"></i></div>
+                        <div class="badge-text">
+                            <strong>+10 ans</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= NOS VALEURS ================= -->
+<section class="values-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge" data-i18n="values-badge">CE QUI NOUS ANIME</span>
+            <h2 class="section-title" data-i18n="values-title">Nos valeurs fondamentales</h2>
+            <div class="section-divider mx-auto"></div>
+            <p class="body-text" style="max-width:600px;margin:0 auto;" data-i18n="values-desc">Ces valeurs guident chacune de nos décisions, de nos interactions et de nos solutions.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h4 data-i18n="value-innovation">Innovation</h4>
+                    <p data-i18n="value-innovation-desc">Nous intégrons constamment les dernières avancées technologiques pour proposer des solutions modernes, évolutives et compétitives.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h4 data-i18n="value-proximity">Proximité</h4>
+                    <p data-i18n="value-proximity-desc">Nous croyons en un accompagnement humain, réactif et personnalisé. Votre succès est notre priorité absolue, à chaque étape du projet.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4 data-i18n="value-reliability">Fiabilité</h4>
+                    <p data-i18n="value-reliability-desc">Nos solutions sont robustes, sécurisées et testées rigoureusement. Vos données et celles de vos clients sont protégées en permanence.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-users"></i></div>
+                    <h4 data-i18n="value-inclusivity">Inclusivité</h4>
+                    <p data-i18n="value-inclusivity-desc">Nous concevons des produits accessibles à tous, des grandes entreprises aux petites structures, avec des tarifs adaptés à chaque budget.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-star"></i></div>
+                    <h4 data-i18n="value-excellence">Excellence</h4>
+                    <p data-i18n="value-excellence-desc">La qualité n'est pas une option. Chaque ligne de code, chaque formation, chaque installation porte notre signature d'excellence.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-globe-africa"></i></div>
+                    <h4 data-i18n="value-local">Impact local</h4>
+                    <p data-i18n="value-local-desc">Enracinés en Afrique, nous contribuons activement à l'essor numérique du Cameroun et à la création d'un écosystème tech local fort.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= NOTRE ÉQUIPE ================= 
+<section class="team-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge" data-i18n="team-badge">LES VISAGES DE GEC</span>
+            <h2 class="section-title" data-i18n="team-title">Notre <span>équipe</span> d'experts</h2>
+            <div class="section-divider mx-auto"></div>
+            <p class="body-text" style="max-width:600px;margin:0 auto;" data-i18n="team-desc">Des professionnels passionnés, certifiés et dévoués à vous offrir le meilleur de la technologie.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card">
+                    <div class="team-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="NOUFACK Delmas">
+                        <div class="team-overlay">
+                            <a href="https://www.linkedin.com/company/gec-informatique/" class="team-social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/237694989864" class="team-social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h5>NOUFACK Delmas</h5>
+                        <span class="team-role" data-i18n="team-role-founder">Fondateur & Directeur</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card">
+                    <div class="team-img-wrap">
+                        <img src="images/betch.jpg" alt="Responsable technique">
+                        <div class="team-overlay">
+                            <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/237659275826" class="team-social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h5 data-i18n="team-dev-name">BETCHEM Raphael</h5>
+                        <span class="team-role" data-i18n="team-dev-role">Developpeur logiciels</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card">
+                    <div class="team-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=400&q=80" alt="Formateurs">
+                        <div class="team-overlay">
+                            <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/237693538376" class="team-social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h5 data-i18n="team-training-name">Pôle Formation</h5>
+                        <span class="team-role" data-i18n="team-training-role">Formateurs certifiés</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card">
+                    <div class="team-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&q=80" alt="Support technique">
+                        <div class="team-overlay">
+                            <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/237693538376" class="team-social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h5 data-i18n="team-support-name">Support & Maintenance</h5>
+                        <span class="team-role" data-i18n="team-support-role">Techniciens spécialisés</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+<!-- ================= STATISTIQUES ================= -->
+<section class="stats-section">
+    <div class="stats-bg"></div>
+    <div class="container stats-container">
+        <div class="stats-header">
+            <span class="stats-label" data-i18n="stats-label">Notre bilan en chiffres</span>
+            <h2 data-i18n="stats-title">Des résultats qui parlent d'eux-mêmes</h2>
+            <p data-i18n="stats-text">Chaque chiffre reflète la confiance de nos clients et l'engagement de nos équipes.</p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-smile-beam"></i></div>
+                <div class="stat-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="track" cx="60" cy="60" r="50"/>
+                        <circle class="progress" cx="60" cy="60" r="50" data-percent="80" style="stroke-dasharray:0 314;"/>
+                    </svg>
+                    <div class="stat-value" data-target="80">0<span>%</span></div>
+                </div>
+                <div class="stat-label" data-i18n="stat-satisfaction">Satisfaction client</div>
+                <div class="stat-desc" data-i18n="stat-satisfaction-desc">Nos clients nous font confiance</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                <div class="stat-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="track" cx="60" cy="60" r="50"/>
+                        <circle class="progress" cx="60" cy="60" r="50" data-percent="75" style="stroke-dasharray:0 314;"/>
+                    </svg>
+                    <div class="stat-value" data-target="100">0<span>+</span></div>
+                </div>
+                <div class="stat-label" data-i18n="stat-projects">Projets réalisés</div>
+                <div class="stat-desc" data-i18n="stat-projects-desc">Des solutions déployées avec succès</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <div class="stat-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="track" cx="60" cy="60" r="50"/>
+                        <circle class="progress" cx="60" cy="60" r="50" data-percent="65" style="stroke-dasharray:0 314;"/>
+                    </svg>
+                    <div class="stat-value" data-target="100">0<span>+</span></div>
+                </div>
+                <div class="stat-label" data-i18n="stat-clients">Clients accompagnés</div>
+                <div class="stat-desc" data-i18n="stat-clients-desc">Entreprises et particuliers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                <div class="stat-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="track" cx="60" cy="60" r="50"/>
+                        <circle class="progress" cx="60" cy="60" r="50" data-percent="90" style="stroke-dasharray:0 314;"/>
+                    </svg>
+                    <div class="stat-value" data-target="10">0<span>+</span></div>
+                </div>
+                <div class="stat-label" data-i18n="stat-experience">Années d'expérience</div>
+                <div class="stat-desc" data-i18n="stat-experience-desc">Une décennie d'expertise</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="stat-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="track" cx="60" cy="60" r="50"/>
+                        <circle class="progress" cx="60" cy="60" r="50" data-percent="55" style="stroke-dasharray:0 314;"/>
+                    </svg>
+                    <div class="stat-value" data-target="150">0<span>+</span></div>
+                </div>
+                <div class="stat-label" data-i18n="stat-trained">Apprenants formés</div>
+                <div class="stat-desc" data-i18n="stat-trained-desc">Professionnels et étudiants</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-handshake"></i></div>
+                <div class="stat-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="track" cx="60" cy="60" r="50"/>
+                        <circle class="progress" cx="60" cy="60" r="50" data-percent="50" style="stroke-dasharray:0 314;"/>
+                    </svg>
+                    <div class="stat-value" data-target="20">0<span>+</span></div>
+                </div>
+                <div class="stat-label" data-i18n="stat-partners">Partenaires actifs</div>
+                <div class="stat-desc" data-i18n="stat-partners-desc">Un réseau solide</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-section">
+    <div class="container" style="position:relative;z-index:2;">
+        <h2 data-i18n="apropos-cta-title">Prêt à construire l'avenir avec nous ?</h2>
+        <p data-i18n="apropos-cta-text">Que vous soyez un établissement de santé, une entreprise ou un particulier, nos solutions sont faites pour vous.</p>
+        <div>
+            <a href="services.html" class="cta-btn-white"><i class="fas fa-cogs"></i> <span data-i18n="nav-services">Découvrir nos services</span></a>
+            <a href="https://wa.me/237694989864" class="cta-btn-outline-white" target="_blank"><i class="fab fa-whatsapp"></i> <span data-i18n="apropos-cta-wa">Discutons sur WhatsApp</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CHRONOLOGIE ================= -->
+<section class="timeline-section">
+    <div class="container">
+        <div class="text-center mb-2">
+            <span class="section-badge" data-i18n="timeline-badge">NOTRE PARCOURS</span>
+            <h2 class="section-title" data-i18n="timeline-title">Une <span>décennie</span> d'innovation</h2>
+            <div class="section-divider mx-auto"></div>
+        </div>
+        <div class="timeline">
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                    <div class="tl-year">2016</div>
+                    <h5 data-i18n="tl-2016-title">Fondation de GEC Informatique</h5>
+                    <p data-i18n="tl-2016-text">NOUFACK Delmas crée GEC Informatique Sarl à Yaoundé avec une vision claire : digitaliser la santé au Cameroun.</p>
+                </div>
+            </div>
+            <div class="tl-item right">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                    <div class="tl-year">2017</div>
+                    <h5 data-i18n="tl-2017-title">Lancement du logiciel GCM</h5>
+                    <p data-i18n="tl-2017-text">Première version du logiciel GCM déployée dans plusieurs cliniques de Yaoundé.</p>
+                </div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                    <div class="tl-year">2019</div>
+                    <h5 data-i18n="tl-2019-title">Expansion des services</h5>
+                    <p data-i18n="tl-2019-text">Lancement des activités de location de lits médicalisés et d'installation de vidéosurveillance.</p>
+                </div>
+            </div>
+            <div class="tl-item right">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                    <div class="tl-year">2020</div>
+                    <h5 data-i18n="tl-2020-title">Centre de formation TIC</h5>
+                    <p data-i18n="tl-2020-text">Ouverture du centre de formation certifiant : développement web, réseaux, cybersécurité et bureautique.</p>
+                </div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                    <div class="tl-year">2022</div>
+                    <h5 data-i18n="tl-2022-title">Plateforme ALL-WORKER</h5>
+                    <p data-i18n="tl-2022-text">Lancement d'ALL-WORKER, la plateforme innovante de mise en relation entre talents et entreprises.</p>
+                </div>
+            </div>
+            <div class="tl-item right">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                    <div class="tl-year">2024–2026</div>
+                    <h5 data-i18n="tl-2024-title">Croissance & rayonnement national</h5>
+                    <p data-i18n="tl-2024-text">GEC consolide sa présence avec 50+ clients, 100+ projets livrés et 500+ apprenants formés à travers le Cameroun.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<svg width="0" height="0" style="position:absolute">
+    <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#5da8ff;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#00e0ff;stop-opacity:1"/>
+        </linearGradient>
+    </defs>
+</svg>
+
+
+
+<!-- ================= PRE FOOTER ================= -->
+<div class="pre-footer" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5 data-i18n="quick-links">Liens rapides</h5>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav-home">Accueil</a></li>
+                    <li><a href="apropos.html" data-i18n="nav-about">À propos</a></li>
+                    <li><a href="services.html" data-i18n="nav-services">Services</a></li>
+                    <li><a href="produits.html" data-i18n="nav-products">Nos Produits</a></li>
+                    <li><a href="actualites.html" data-i18n="nav-news">Actualités</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="about">À propos</h5>
+                <p data-i18n="footer-about">GEC Informatique est une entreprise spécialisée dans les services technologiques et la formation.</p>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="contact">Contact</h5>
+                <p><i class="fas fa-envelope"></i> contacts@gec-informatique.com</p>
+                <p><i class="fas fa-phone"></i> +237 693 53 83 76</p>
+                <p><i class="fab fa-whatsapp"></i> +237 694 98 98 64</p>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address">Chapelle Ngousso, Yaoundé</span></p>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="follow-us">Suivez-nous</h5>
+                <div style="display:flex;gap:12px;">
+                    <a href="https://www.facebook.com/gecinformatique/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/237693538376" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/company/gec-informatique/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-divider"></div>
+<div class="footer">&copy; 2026 GEC Informatique Sarl - <span data-i18n="rights">Tous droits réservés.</span></div>
+
+<!-- ================= BOUTON RDV CIRCULAIRE ================= -->
+<button class="floating-rdv" id="openRdvModal" onclick="document.getElementById('rdvModalOverlay').classList.add('open')">
+    <i class="fas fa-calendar-check"></i>
+    <span class="btn-text" data-i18n="btn-appointment">Prendre RDV</span>
+</button>
+
+<!-- ================= BACK TO TOP ================= -->
+<a href="#" class="back-to-top" id="backToTop" title="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<!-- ================= MODAL RDV ================= -->
+<div class="rdv-modal-overlay" id="rdvModalOverlay" onclick="if(event.target===this)this.classList.remove('open')">
+    <div class="rdv-modal">
+        <div class="rdv-modal-header">
+            <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:42px;height:42px;background:rgba(255,255,255,.15);border-radius:12px;display:flex;align-items:center;justify-content:center;">
+                    <i class="fas fa-calendar-check" style="color:#fff;font-size:20px;"></i>
+                </div>
+                <div>
+                    <h3 style="margin:0;" data-i18n="modal-appointment-title">Prendre Rendez-vous</h3>
+                    <p style="margin:0;" data-i18n="modal-appointment-subtitle">Réponse sous 24h</p>
+                </div>
+            </div>
+            <button class="rdv-modal-close" onclick="document.getElementById('rdvModalOverlay').classList.remove('open')">&times;</button>
+        </div>
+        <div class="rdv-modal-body">
+            <form id="rdvForm" action="https://formspree.io/f/xdaljzlj" method="POST">
+                <div class="rdv-form-row">
+                    <div class="rdv-form-group"><label data-i18n="form-name">Nom <span>*</span></label><input type="text" name="nom" required></div>
+                    <div class="rdv-form-group"><label data-i18n="form-phone">Téléphone <span>*</span></label><input type="tel" name="telephone" required></div>
+                </div>
+                <div class="rdv-form-group"><label data-i18n="form-email">Email <span>*</span></label><input type="email" name="email" required></div>
+                <div class="rdv-form-group">
+                    <label data-i18n="form-service">Service <span>*</span></label>
+                    <select name="service" required>
+                        <option value="" disabled selected data-i18n="form-select">-- Sélectionnez --</option>
+                        <option data-i18n="service-carebed">Location lits garde malade</option>
+                        <option data-i18n="service-hospbed">Location lits hospitalisation</option>
+                        <option data-i18n="service-surveillance">Installation vidéo surveillance</option>
+                        <option data-i18n="service-software">Développement logiciel</option>
+                        <option data-i18n="service-training">Formation TIC</option>
+                        <option data-i18n="service-maintenance">Maintenance & Support</option>
+                        <option data-i18n="service-web">Sites & Plateformes web</option>
+                        <option data-i18n="service-gcm">Logiciel GCM</option>
+                        <option data-i18n="service-allworker">Plateforme ALL-WORKER</option>
+                        <option data-i18n="service-other">Autre</option>
+                    </select>
+                </div>
+                <div class="rdv-form-row">
+                    <div class="rdv-form-group"><label data-i18n="form-date">Date</label><input type="date" name="date"></div>
+                    <div class="rdv-form-group"><label data-i18n="form-time">Heure</label>
+                        <select name="heure">
+                            <option value="" data-i18n="form-select-time">--</option>
+                            <option>08-10h</option><option>10-12h</option><option>12-14h</option>
+                            <option>14-16h</option><option>16-18h</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rdv-form-group"><label data-i18n="form-message">Message</label><textarea name="message"></textarea></div>
+                <input type="hidden" name="_subject" value="Nouveau RDV">
+                <button type="submit" class="rdv-submit-btn" data-i18n="btn-submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
+            </form>
+            <div class="rdv-success-msg" id="rdvSuccess">
+                <div class="rdv-check"><i class="fas fa-check"></i></div>
+                <h4 data-i18n="success-appointment-title">Demande envoyée !</h4>
+                <p data-i18n="success-appointment-text">Nous vous contacterons sous 24h.</p>
+                <button onclick="document.getElementById('rdvModalOverlay').classList.remove('open')" data-i18n="btn-close">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="translations.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

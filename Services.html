@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="Logo.jpg">
+    <title>Services - GEC Informatique Sarl</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address">CHAPELLE NGOUSSO - Yaoundé</span>
+            <i class="fas fa-envelope ml-3"></i> <span data-i18n="contact-email">contacts@gec-informatique.com</span>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="social mr-3">
+                <a href="https://www.facebook.com/gecinformatique/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/237693538376" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/company/gec-informatique/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="language-selector">
+                <span class="lang-flag" id="lang-toggle" onclick="toggleLanguage()">
+                    <img id="lang-flag-img" src="https://flagcdn.com/w40/gb.png" alt="Switch to English" title="Switch to English">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<div class="main-header" id="mainHeader">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="brand-area">
+                    <img src="images/Logo.jpg" width="100" alt="Logo GEC Informatique">
+                    <div class="brand-text">
+                        <h3>GEC INFORMATIQUE SARL</h3>
+                        <small data-i18n="header-slogan">La numérisation au service de la Gestion</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 whatsapp-box">
+                <h6 data-i18n="whatsapp-title">Contactez-nous via WhatsApp</h6>
+                <p><i class="fab fa-whatsapp"></i> +237 694 98 98 64</p>
+                <p><i class="fab fa-whatsapp"></i> +237 693 53 83 76</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar sticky-navbar" id="mainNav">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav-home">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="apropos.html" data-i18n="nav-about">À propos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="services.html" data-i18n="nav-services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="produits.html" data-i18n="nav-products">Nos Produits</a></li>
+                <li class="nav-item"><a class="nav-link" href="actualites.html" data-i18n="nav-news">Actualités</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= PAGE HERO ================= -->
+<div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&q=80');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+        <div class="breadcrumb-nav mb-3">
+            <a href="index.html"><i class="fas fa-home mr-1"></i> Accueil</a>
+            <span class="breadcrumb-sep">/</span>
+            <span data-i18n="nav-services">Services</span>
+        </div>
+        <h1 data-i18n="services-page-title">Nos Services</h1>
+        <p data-i18n="services-page-desc">De l'infrastructure technique à l'accompagnement humain, nous offrons une gamme complète de services technologiques pour accélérer votre transformation numérique.</p>
+    </div>
+</div>
+
+<!-- ================= INTRO ================= -->
+<section class="services-intro">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <span class="section-badge" data-i18n="services-subtitle">NOTRE SAVOIR-FAIRE</span>
+                <h2 class="section-title" data-i18n="services-title">Des solutions <span>complètes</span> pour votre croissance</h2>
+                <div class="section-divider"></div>
+                <p class="body-text" data-i18n="services-intro-text1">Depuis 2016, GEC Informatique déploie son expertise au service des entreprises, des établissements de santé et des particuliers. Nos services couvrent l'ensemble du cycle de vie de vos projets technologiques.</p>
+                <p class="body-text" data-i18n="services-intro-text2">Chaque service est pensé pour répondre aux réalités du terrain camerounais : robustesse, accessibilité, et support de proximité.</p>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <div style="text-align:center;padding:18px;background:rgba(15,82,186,0.05);border-radius:14px;">
+                            <div style="font-size:2rem;font-weight:900;color:var(--blue-main);">7</div>
+                            <div style="font-size:0.85rem;color:#6a7a8a;" data-i18n="services-count-label">Services disponibles</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div style="text-align:center;padding:18px;background:rgba(15,82,186,0.05);border-radius:14px;">
+                            <div style="font-size:2rem;font-weight:900;color:var(--blue-main);">24/7</div>
+                            <div style="font-size:0.85rem;color:#6a7a8a;" data-i18n="services-support-label">Support disponible</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&q=80" alt="Services GEC" style="width:100%;border-radius:20px;box-shadow:0 25px 55px -10px rgba(11,61,145,0.2);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SERVICES DÉTAILLÉS ================= -->
+<section class="service-detail-section">
+    <div class="container">
+
+        <!-- Service 1 : Développement logiciel -->
+        <div class="service-block">
+            <div class="row no-gutters align-items-stretch">
+                <div class="col-lg-5">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=700&q=80" alt="Développement logiciel" class="service-block-img">
+                </div>
+                <div class="col-lg-7">
+                    <div class="service-block-body">
+                        <div class="service-block-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3 data-i18n="service-dev-title">Développement logiciel sur mesure</h3>
+                        <p data-i18n="service-dev-desc">Nous concevons des applications web, mobiles et des logiciels de gestion adaptés à vos processus métiers. De l'analyse des besoins à la mise en production, notre équipe vous accompagne à chaque étape pour livrer un produit fiable, évolutif et intuitif.</p>
+                        <p data-i18n="services-dev-tech">Notre expertise couvre les technologies modernes (React, Node.js, PHP, MySQL, Flutter…) pour des solutions robustes et pérennes.</p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-dev1">Applications web & mobile</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-dev2">Logiciels de gestion</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-dev3">API & intégrations tierces</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-dev4">Maintenance évolutive</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-dev5">Tests et déploiement</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-dev6">Formation utilisateurs</span></div>
+                        </div>
+                        <a href="https://wa.me/237694989864" class="service-cta-btn" target="_blank"><i class="fab fa-whatsapp"></i> <span data-i18n="btn-quote">Demander un devis</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2 : Location lits garde-malade -->
+        <div class="service-block">
+            <div class="row no-gutters align-items-stretch">
+                <div class="col-lg-7 order-lg-1 order-2">
+                    <div class="service-block-body">
+                        <div class="service-block-icon"><i class="fas fa-procedures"></i></div>
+                        <h3 data-i18n="service-carebed-title">Location de lits de garde-malade</h3>
+                        <p data-i18n="service-carebed-desc">Nos lits de garde-malade sont conçus pour offrir un confort optimal aux accompagnants de patients hospitalisés. Ergonomiques, légers et faciles d'installation, ils sont disponibles en location courte ou longue durée avec livraison à domicile ou en clinique.</p>
+                        <p data-i18n="services-carebed-maintenance">Chaque lit bénéficie d'une maintenance incluse pour garantir votre sérénité tout au long de la période de location.</p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-carebed1">Lits ergonomiques réglables</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-carebed2">Moustiquaire intégrée</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-carebed3">Matelas anti-escarres</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-carebed4">Livraison & installation</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-carebed5">Maintenance incluse</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-carebed6">Location flexible</span></div>
+                        </div>
+                        <a href="https://wa.me/237694989864" class="service-cta-btn" target="_blank"><i class="fab fa-whatsapp"></i> <span data-i18n="services-book-now">Réserver maintenant</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-2 order-1">
+                    <img src="images/WhatsApp Image 2026-03-03 at 11.33.47.jpeg" alt="Lits garde-malade" class="service-block-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3 : Lits d'hospitalisation -->
+        <div class="service-block">
+            <div class="row no-gutters align-items-stretch">
+                <div class="col-lg-5">
+                    <img src="images/lit.jpg" alt="Lits hospitalisation" class="service-block-img">
+                </div>
+                <div class="col-lg-7">
+                    <div class="service-block-body">
+                        <div class="service-block-icon"><i class="fas fa-hospital-alt"></i></div>
+                        <h3 data-i18n="service-hospbed-title">Location de lits d'hospitalisation</h3>
+                        <p data-i18n="service-hospbed-desc">Pour les établissements de santé, cliniques et particuliers, nous proposons des lits médicalisés de haute qualité : lits électriques à hauteur variable, équipés de barrières de sécurité et compatibles avec les équipements médicaux standards.</p>
+                        <p data-i18n="services-hospbed-p2">Que ce soit pour renforcer temporairement votre capacité d'accueil ou équiper un domicile pour une convalescence, nos lits répondent aux normes médicales les plus strictes.</p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-hospbed1">Lits électriques multi-positions</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-hospbed2">Barrières de sécurité</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-hospbed3">Normes médicales certifiées</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-hospbed4">Assistance technique 24/7</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-hospbed5">Contrats sur mesure</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-hospbed6">Livraison express</span></div>
+                        </div>
+                        <a href="https://wa.me/237694989864" class="service-cta-btn" target="_blank"><i class="fab fa-whatsapp"></i> <span data-i18n="btn-quote">Demander un devis</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 4 : Vidéosurveillance -->
+        <div class="service-block">
+            <div class="row no-gutters align-items-stretch">
+                <div class="col-lg-7 order-lg-1 order-2">
+                    <div class="service-block-body">
+                        <div class="service-block-icon"><i class="fas fa-video"></i></div>
+                        <h3 data-i18n="service-surveillance-title">Installation vidéosurveillance</h3>
+                        <p data-i18n="service-surveillance-desc">Protégez vos biens, votre famille et votre entreprise avec nos systèmes de vidéosurveillance dernière génération. Nous réalisons l'installation complète : étude du site, pose des caméras, configuration du système et formation à l'utilisation.</p>
+                        <p data-i18n="services-surv-p2">Nos solutions permettent un accès à distance via smartphone, garantissant une surveillance continue où que vous soyez.</p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-surv1">Caméras HD jour/nuit</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-surv2">Accès via mobile</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-surv3">Détection de mouvement</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-surv4">Enregistrement cloud/local</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-surv5">Alarmes intelligentes</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-surv6">Maintenance et SAV</span></div>
+                        </div>
+                        <a href="https://wa.me/237694989864" class="service-cta-btn" target="_blank"><i class="fab fa-whatsapp"></i> <span data-i18n="services-free-quote">Obtenir un devis gratuit</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-2 order-1">
+                    <img src="images/camera.jpg" alt="Vidéosurveillance" class="service-block-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 5 : Formation TIC -->
+        <div class="service-block">
+            <div class="row no-gutters align-items-stretch">
+                <div class="col-lg-5">
+                    <img src="images/forma.jpg" alt="Formation TIC" class="service-block-img">
+                </div>
+                <div class="col-lg-7">
+                    <div class="service-block-body">
+                        <div class="service-block-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3 data-i18n="service-training-title">Formation TIC professionnelle</h3>
+                        <p data-i18n="service-training-desc">Notre centre de formation propose des programmes pratiques et certifiants pour booster vos compétences numériques. Que vous soyez étudiant, professionnel ou entrepreneur, nos formations sont adaptées à tous les niveaux et dispensées par des formateurs certifiés.</p>
+                        <p data-i18n="services-training-p2">Chaque session allie théorie et pratique pour une montée en compétences rapide et efficace.</p>
+                        <div class="service-features">
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-training1">Développement web & mobile</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-training2">Réseaux & cybersécurité</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-training3">Bureautique & Office 365</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-training4">Certificats reconnus</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-training5">Design graphique</span></div>
+                            <div class="sf-item"><i class="fas fa-check-circle"></i><span data-i18n="feature-training6">Petits groupes (max 15)</span></div>
+                        </div>
+                        <a href="index.html#formations" class="service-cta-btn"><i class="fas fa-book-open"></i> <span data-i18n="btn-view-training">Voir les formations</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= SERVICES COMPLÉMENTAIRES ================= -->
+<section class="services-mini-grid">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge" data-i18n="services-complementary-badge">ÉGALEMENT DISPONIBLE</span>
+            <h2 class="section-title" data-i18n="services-complementary-title">Services <span>complémentaires</span></h2>
+            <div class="section-divider mx-auto"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="mini-card">
+                    <div class="mini-icon"><i class="fas fa-globe"></i></div>
+                    <h5 data-i18n="service-web-title">Sites web & Plateformes</h5>
+                    <p data-i18n="service-web-desc">Création de sites vitrine, e-commerce et plateformes métier avec design personnalisé et administration simplifiée.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="mini-card">
+                    <div class="mini-icon"><i class="fas fa-tools"></i></div>
+                    <h5 data-i18n="service-maintenance-title">Maintenance informatique</h5>
+                    <p data-i18n="service-maintenance-desc">Assistance technique réactive, maintenance préventive et contrats personnalisés pour assurer la continuité de vos activités.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="mini-card">
+                    <div class="mini-icon"><i class="fas fa-network-wired"></i></div>
+                    <h5 data-i18n="services-network-title">Réseaux & Infrastructure</h5>
+                    <p data-i18n="services-network-desc">Installation et configuration de réseaux d'entreprise, Wi-Fi professionnel, serveurs et infrastructure cloud.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="mini-card">
+                    <div class="mini-icon"><i class="fas fa-headset"></i></div>
+                    <h5 data-i18n="services-remote-title">Support à distance</h5>
+                    <p data-i18n="services-remote-desc">Dépannage rapide et assistance à distance pour résoudre vos problèmes informatiques sans déplacement, de manière sécurisée.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="mini-card">
+                    <div class="mini-icon"><i class="fas fa-print"></i></div>
+                    <h5 data-i18n="services-hardware-title">Matériel informatique</h5>
+                    <p data-i18n="services-hardware-desc">Vente, configuration et installation de matériel informatique : ordinateurs, imprimantes, équipements réseau et périphériques.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="mini-card">
+                    <div class="mini-icon"><i class="fas fa-cloud"></i></div>
+                    <h5 data-i18n="services-cloud-title">Solutions cloud</h5>
+                    <p data-i18n="services-cloud-desc">Migration et gestion de vos données et applications vers le cloud pour plus de flexibilité, sécurité et disponibilité.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-section">
+    <div class="container" style="position:relative;z-index:2;">
+        <h2 data-i18n="services-cta-title">Quel service vous intéresse ?</h2>
+        <p data-i18n="services-cta-text">Contactez-nous dès aujourd'hui pour une consultation gratuite. Nos experts analysent vos besoins et vous proposent la meilleure solution.</p>
+        <div>
+            <a href="https://wa.me/237694989864" class="cta-btn-white" target="_blank"><i class="fab fa-whatsapp"></i> <span data-i18n="btn-contact-wa">Discutons sur WhatsApp</span></a>
+            <a href="mailto:contacts@gec-informatique.com" class="cta-btn-outline-white"><i class="fas fa-envelope"></i> <span data-i18n="services-cta-email">Envoyer un email</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROCESSUS ================= -->
+<section class="process-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-badge" data-i18n="process-badge">COMMENT ÇA MARCHE</span>
+            <h2 class="section-title" data-i18n="process-title">Notre <span>processus</span> de travail</h2>
+            <div class="section-divider mx-auto"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4 process-step">
+                <div class="process-num">1</div>
+                <h5 data-i18n="process-step1-title">Analyse des besoins</h5>
+                <p data-i18n="process-step1-desc">Nous prenons le temps de comprendre votre contexte, vos objectifs et vos contraintes lors d'une consultation gratuite.</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 process-step">
+                <div class="process-num">2</div>
+                <h5 data-i18n="process-step2-title">Proposition & Devis</h5>
+                <p data-i18n="process-step2-desc">Nous vous soumettons une offre détaillée et transparente, adaptée à votre budget, dans les 24 heures.</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 process-step">
+                <div class="process-num">3</div>
+                <h5 data-i18n="process-step3-title">Réalisation</h5>
+                <p data-i18n="process-step3-desc">Notre équipe déploie la solution avec des points d'avancement réguliers pour garantir votre satisfaction.</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 process-step">
+                <div class="process-num">4</div>
+                <h5 data-i18n="process-step4-title">Suivi & Support</h5>
+                <p data-i18n="process-step4-desc">Après livraison, nous restons à vos côtés pour la maintenance, les mises à jour et tout support technique.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= PRE FOOTER ================= -->
+<div class="pre-footer" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5 data-i18n="quick-links">Liens rapides</h5>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav-home">Accueil</a></li>
+                    <li><a href="apropos.html" data-i18n="nav-about">À propos</a></li>
+                    <li><a href="services.html" data-i18n="nav-services">Services</a></li>
+                    <li><a href="produits.html" data-i18n="nav-products">Nos Produits</a></li>
+                    <li><a href="actualites.html" data-i18n="nav-news">Actualités</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="about">À propos</h5>
+                <p data-i18n="footer-about">GEC Informatique est une entreprise spécialisée dans les services technologiques et la formation au Cameroun.</p>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="contact">Contact</h5>
+                <p><i class="fas fa-envelope"></i> contacts@gec-informatique.com</p>
+                <p><i class="fas fa-phone"></i> +237 693 53 83 76</p>
+                <p><i class="fab fa-whatsapp"></i> +237 694 98 98 64</p>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address">Chapelle Ngousso, Yaoundé</span></p>
+            </div>
+            <div class="col-md-3">
+                <h5 data-i18n="follow-us">Suivez-nous</h5>
+                <div style="display:flex;gap:12px;">
+                    <a href="https://www.facebook.com/gecinformatique/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/237693538376" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/company/gec-informatique/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-divider"></div>
+<div class="footer">&copy; 2026 GEC Informatique Sarl - <span data-i18n="rights">Tous droits réservés.</span></div>
+
+<!-- ================= BOUTON RDV CIRCULAIRE ================= -->
+<button class="floating-rdv" id="openRdvModal" onclick="document.getElementById('rdvModalOverlay').classList.add('open')">
+    <i class="fas fa-calendar-check"></i>
+    <span class="btn-text" data-i18n="btn-appointment">Prendre RDV</span>
+</button>
+
+<!-- ================= BACK TO TOP ================= -->
+<a href="#" class="back-to-top" id="backToTop" title="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<!-- ================= MODAL RDV ================= -->
+<div class="rdv-modal-overlay" id="rdvModalOverlay" onclick="if(event.target===this)this.classList.remove('open')">
+    <div class="rdv-modal">
+        <div class="rdv-modal-header">
+            <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:42px;height:42px;background:rgba(255,255,255,.15);border-radius:12px;display:flex;align-items:center;justify-content:center;">
+                    <i class="fas fa-calendar-check" style="color:#fff;font-size:20px;"></i>
+                </div>
+                <div>
+                    <h3 style="margin:0;" data-i18n="modal-appointment-title">Prendre Rendez-vous</h3>
+                    <p style="margin:0;" data-i18n="modal-appointment-subtitle">Réponse sous 24h</p>
+                </div>
+            </div>
+            <button class="rdv-modal-close" onclick="document.getElementById('rdvModalOverlay').classList.remove('open')">&times;</button>
+        </div>
+        <div class="rdv-modal-body">
+            <form id="rdvForm" action="https://formspree.io/f/xdaljzlj" method="POST">
+                <div class="rdv-form-row">
+                    <div class="rdv-form-group"><label data-i18n="form-name">Nom <span>*</span></label><input type="text" name="nom" required></div>
+                    <div class="rdv-form-group"><label data-i18n="form-phone">Téléphone <span>*</span></label><input type="tel" name="telephone" required></div>
+                </div>
+                <div class="rdv-form-group"><label data-i18n="form-email">Email <span>*</span></label><input type="email" name="email" required></div>
+                <div class="rdv-form-group">
+                    <label data-i18n="form-service">Service <span>*</span></label>
+                    <select name="service" required>
+                        <option value="" disabled selected data-i18n="form-select">-- Sélectionnez --</option>
+                        <option data-i18n="service-carebed">Location lits garde malade</option>
+                        <option data-i18n="service-hospbed">Location lits hospitalisation</option>
+                        <option data-i18n="service-surveillance">Installation vidéo surveillance</option>
+                        <option data-i18n="service-software">Développement logiciel</option>
+                        <option data-i18n="service-training">Formation TIC</option>
+                        <option data-i18n="service-maintenance">Maintenance & Support</option>
+                        <option data-i18n="service-web">Sites & Plateformes web</option>
+                        <option data-i18n="service-gcm">Logiciel GCM</option>
+                        <option data-i18n="service-allworker">Plateforme ALL-WORKER</option>
+                        <option data-i18n="service-other">Autre</option>
+                    </select>
+                </div>
+                <div class="rdv-form-row">
+                    <div class="rdv-form-group"><label data-i18n="form-date">Date</label><input type="date" name="date"></div>
+                    <div class="rdv-form-group"><label data-i18n="form-time">Heure</label>
+                        <select name="heure">
+                            <option value="" data-i18n="form-select-time">--</option>
+                            <option>08-10h</option><option>10-12h</option><option>12-14h</option>
+                            <option>14-16h</option><option>16-18h</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rdv-form-group"><label data-i18n="form-message">Message</label><textarea name="message"></textarea></div>
+                <input type="hidden" name="_subject" value="Nouveau RDV">
+                <button type="submit" class="rdv-submit-btn" data-i18n="btn-submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
+            </form>
+            <div class="rdv-success-msg" id="rdvSuccess">
+                <div class="rdv-check"><i class="fas fa-check"></i></div>
+                <h4 data-i18n="success-appointment-title">Demande envoyée !</h4>
+                <p data-i18n="success-appointment-text">Nous vous contacterons sous 24h.</p>
+                <button onclick="document.getElementById('rdvModalOverlay').classList.remove('open')" data-i18n="btn-close">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="translations.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
